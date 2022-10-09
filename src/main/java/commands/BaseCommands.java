@@ -2,6 +2,7 @@ package commands;
 
 import net.dv8tion.jda.api.EmbedBuilder;
 import net.dv8tion.jda.api.events.interaction.command.SlashCommandInteractionEvent;
+import net.dv8tion.jda.api.interactions.commands.OptionMapping;
 
 import java.awt.*;
 import java.io.*;
@@ -41,6 +42,16 @@ public class BaseCommands {
         }
     }
     public static void say(SlashCommandInteractionEvent event){
+        OptionMapping messageOption = event.getOption("message");
+        String message;
+        if(messageOption != null){
+            message = messageOption.getAsString();
+        }else{
+            message = "ERR";
+        }
+
+        event.getChannel().sendMessage(message).queue();
+        event.reply("message send").setEphemeral(true).queue();
 
     }
 }

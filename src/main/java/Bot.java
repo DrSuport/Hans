@@ -52,8 +52,8 @@ public class Bot extends ListenerAdapter
         OptionData messageOption = new OptionData(OptionType.STRING, "message", "The message you want the bot say", true);
 
         for (Command c: BaseCommandsList.commands) {
-            if(c.options[0].equals("message")){
-                jda.upsertCommand(c.name, c.description).addOption(messageOption.getType(), messageOption.getName(), messageOption.getDescription()).queue();
+            if(c.options.length>0){
+                jda.upsertCommand(c.name, c.description).addOption(messageOption.getType(), messageOption.getName(), messageOption.getDescription(), messageOption.isRequired()).queue();
             }else{
                 jda.upsertCommand(c.name, c.description).queue();
             }
