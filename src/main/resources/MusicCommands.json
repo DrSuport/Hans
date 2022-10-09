@@ -1,0 +1,12 @@
+{
+  "commands": [
+    {"name": "play", "description": "Play's yt music or playlist", "access": "none"},
+    {"name": "queue", "description": "Shows queue", "access": "none"},
+    {"name": "skip", "description": "Skips music", "access": "none"},
+    {"name": "clear", "description": "Clears music queue", "access": "none"},
+    {"name": "current", "description": "Shows currently playing music", "access": "none"},
+    {"name": "loop", "description": "Loops music", "access": "none"},
+    {"name": "pause", "description": "Pauses music", "access": "none"},
+    {"name": "shuffle", "description": "Shuffles queue", "access": "none"}
+  ]
+}
