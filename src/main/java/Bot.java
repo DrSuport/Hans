@@ -1,23 +1,24 @@
-import com.google.gson.Gson;
-import commands.BaseCommands;
+import commands.*;
 import net.dv8tion.jda.api.JDA;
 import net.dv8tion.jda.api.JDABuilder;
 import net.dv8tion.jda.api.entities.Activity;
 import net.dv8tion.jda.api.events.interaction.command.SlashCommandInteractionEvent;
 import net.dv8tion.jda.api.hooks.ListenerAdapter;
-import net.dv8tion.jda.api.interactions.commands.OptionType;
 import net.dv8tion.jda.api.interactions.commands.build.OptionData;
 
-
-import java.nio.charset.StandardCharsets;
-import java.nio.file.Files;
-import java.nio.file.Path;
+import javax.swing.text.html.Option;
 import java.util.Collections;
+import java.util.HashMap;
+import java.util.Map;
 
 public class Bot extends ListenerAdapter
 {
-    private static CommandsList BaseCommandsList;
-    private static CommandsList MusicCommandsList;
+    private static Map<String, ACommand> commands = new HashMap<>();
+
+    private static void addCommand(ACommand target){
+        commands.put(target.getName(), target);
+    }
+
     public static void main(String[] args) throws InterruptedException {
 
         if (args.length < 1) {
@@ -33,53 +34,33 @@ public class Bot extends ListenerAdapter
 
         jda.awaitReady();
 
-        Gson gson = new Gson();
-        String BaseJson;
-        String MusicJson;
-        try{
-            BaseJson = Files.readString(Path.of("src/main/resources/commands.json"), StandardCharsets.UTF_8);
-            MusicJson = Files.readString(Path.of("src/main/resources/MusicCommands.json"), StandardCharsets.UTF_8);
-        }catch (Exception e){
-            System.out.println(e.getMessage());
-            BaseJson = "";
-            MusicJson = "";
-        }
-        BaseCommandsList = gson.fromJson(BaseJson, CommandsList.class);
-        MusicCommandsList = gson.fromJson(MusicJson, CommandsList.class);
-
         jda.addEventListener();
 
-        OptionData messageOption = new OptionData(OptionType.STRING, "message", "The message you want the bot say", true);
 
-        for (Command c: BaseCommandsList.commands) {
-            if(c.options[0].equals("message")){
-                jda.upsertCommand(c.name, c.description).addOption(messageOption.getType(), messageOption.getName(), messageOption.getDescription()).queue();
-            }else{
-                jda.upsertCommand(c.name, c.description).queue();
-            }
+        //Here you add commands to use
+        addCommand(new ping());
+        addCommand(new inspire());
+        addCommand(new say());
 
+
+        for (Map.Entry<String, ACommand> entry : commands.entrySet()){
+            ACommand command = entry.getValue();
+            OptionData optionData = command.getOption();
+            String name = command.getName();
+            String description = command.getDescription();
+
+            if(optionData!=null) jda.upsertCommand(name, description).addOption(optionData.getType(), optionData.getName(), optionData.getDescription(), optionData.isRequired()).queue();
+            else jda.upsertCommand(name, description).queue();
         }
-
-        for (Command c: MusicCommandsList.commands) {
-            jda.upsertCommand(c.name, c.description).queue();
-        }
-
-
-
     }
 
     @Override
     public void onSlashCommandInteraction(SlashCommandInteractionEvent event)
     {
-
-        switch (event.getName()) {
-            default -> {}
-            //Base Commands
-            case "ping" -> BaseCommands.ping(event);
-            case "inspire" -> BaseCommands.inspire(event);
-            case "say" -> BaseCommands.say(event);
-            //Music Commands
-
+        try{
+            commands.get(event.getName()).Execute(event);
+        }catch (Exception e){
+            System.out.println(e.getMessage());
         }
     }
 }

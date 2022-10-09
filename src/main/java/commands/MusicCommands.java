@@ -2,7 +2,7 @@ package commands;
 
 import net.dv8tion.jda.api.events.interaction.command.SlashCommandInteractionEvent;
 
-public class MusicCommands {
+public class MusicCommands { //TODO implement music commands
     public static void play(SlashCommandInteractionEvent event){
 
     }

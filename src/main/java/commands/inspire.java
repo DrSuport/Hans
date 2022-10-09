@@ -1,22 +1,30 @@
 package commands;
 
 import net.dv8tion.jda.api.EmbedBuilder;
+import net.dv8tion.jda.api.JDA;
 import net.dv8tion.jda.api.events.interaction.command.SlashCommandInteractionEvent;
+import net.dv8tion.jda.api.interactions.commands.build.OptionData;
 
 import java.awt.*;
-import java.io.*;
-import java.net.*;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.net.URL;
+import java.net.URLConnection;
 
-public class BaseCommands {
-    public static void ping(SlashCommandInteractionEvent event){
-        long time = System.currentTimeMillis();
-        event.reply("Pong!").setEphemeral(true) // reply or acknowledge
-                .flatMap(v ->
-                        event.getHook().editOriginalFormat("Pong: %d ms", System.currentTimeMillis() - time) // then edit original
-                ).queue(); // Queue both reply and edit
+public class inspire extends ACommand {
+    public static String name = "inspire";
+    public static String description = "Inspires you";
+    public static String access = "none";
+    public static OptionData option = null;
+
+    public inspire(){
+        super(name, description, access, option);
     }
 
-    public static void inspire(SlashCommandInteractionEvent event){
+    @Override
+    public void Execute(SlashCommandInteractionEvent event){
         try {
             URLConnection connection = new URL("https://inspirobot.me/api?generate=true").openConnection();
             InputStream input = connection.getInputStream();
@@ -39,8 +47,5 @@ public class BaseCommands {
         } catch (IOException e) {
             e.printStackTrace();
         }
-    }
-    public static void say(SlashCommandInteractionEvent event){
-
     }
 }
