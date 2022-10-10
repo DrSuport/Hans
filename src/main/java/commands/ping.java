@@ -6,7 +6,7 @@ import net.dv8tion.jda.api.interactions.commands.build.OptionData;
 public class ping extends ACommand {
     public static String name = "ping";
     public static String description = "Calculate ping of the bot";
-    public static String access = "none";
+    public static String access = null;
     public static OptionData option = null;
 
     public ping(){

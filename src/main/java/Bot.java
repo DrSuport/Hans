@@ -5,6 +5,8 @@ import net.dv8tion.jda.api.entities.Activity;
 import net.dv8tion.jda.api.events.interaction.command.SlashCommandInteractionEvent;
 import net.dv8tion.jda.api.hooks.ListenerAdapter;
 import net.dv8tion.jda.api.interactions.commands.build.OptionData;
+import net.dv8tion.jda.api.requests.GatewayIntent;
+import net.dv8tion.jda.api.utils.cache.CacheFlag;
 
 import javax.swing.text.html.Option;
 import java.util.Collections;
@@ -28,6 +30,8 @@ public class Bot extends ListenerAdapter
         // args[0] should be the token
         // We don't need any intents for this bot. Slash commands work without any intents!
         JDA jda = JDABuilder.createLight(args[0], Collections.emptyList())
+                .enableIntents(GatewayIntent.GUILD_VOICE_STATES)
+                .enableCache(CacheFlag.VOICE_STATE)
                 .addEventListeners(new Bot())
                 .setActivity(Activity.watching("PornHub kids"))
                 .build();
@@ -37,10 +41,15 @@ public class Bot extends ListenerAdapter
         jda.addEventListener();
 
 
+
         //Here you add commands to use
+        //Base commands
         addCommand(new ping());
         addCommand(new inspire());
         addCommand(new say());
+
+        //Music commands
+        addCommand(new play());
 
 
         for (Map.Entry<String, ACommand> entry : commands.entrySet()){

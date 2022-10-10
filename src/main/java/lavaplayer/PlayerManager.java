@@ -73,4 +73,11 @@ public class PlayerManager {
             }
         });
     }
+
+    public static PlayerManager getINSTANCE(){
+        if(INSTANCE == null){
+            INSTANCE = new PlayerManager();
+        }
+        return INSTANCE;
+    }
 }
