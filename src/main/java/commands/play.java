@@ -19,6 +19,7 @@ import net.dv8tion.jda.api.managers.AudioManager;
 
 import java.net.URI;
 import java.net.URISyntaxException;
+import java.util.List;
 
 public class play extends ACommand{
     public static String name = "play";
@@ -51,19 +52,19 @@ public class play extends ACommand{
         AudioChannel channel = voiceState.getChannel();
 
 
+        event.reply("Searching for channel").setEphemeral(true);
 
-        System.out.println(event.getMember().getVoiceState().getChannel());
 
 
         if(!event.getMember().getVoiceState().inAudioChannel()){
-            event.reply("Message").setEphemeral(true) // reply or acknowledge
+            event.reply("").setEphemeral(true) // reply or acknowledge
                     .flatMap(v ->
                             event.getHook().editOriginalFormat("You need to be in a voice channel for this command to work")
                     ).queue();
             return;
         }
 
-        if(!event.getJDA().getVoiceChannels().contains(event.getMember().getVoiceState().getChannel())){
+        if(event.getJDA().getVoiceChannels().contains(event.getMember().getVoiceState().getChannel())){
             final AudioManager audioManager = event.getGuild().getAudioManager();
             final VoiceChannel memberChannel = (VoiceChannel) event.getMember().getVoiceState().getChannel();
 
@@ -73,6 +74,8 @@ public class play extends ACommand{
         if(!isUrl(URL)){
             URL = "ytsearch:" + URL + " audio";
         }
+
+        event.getHook().editOriginalFormat("Connected!").queue();
 
         PlayerManager.getINSTANCE().loadAndPlay((TextChannel) event.getMessageChannel(), URL);
 

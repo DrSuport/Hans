@@ -35,7 +35,9 @@ public class Bot extends ListenerAdapter
                 // We need voice states to connect to the voice channel
                 GatewayIntent.GUILD_VOICE_STATES,
                 // Enable access to message.getContentRaw()
-                GatewayIntent.MESSAGE_CONTENT
+                GatewayIntent.MESSAGE_CONTENT,
+
+                GatewayIntent.GUILD_EMOJIS_AND_STICKERS
 
         );
 
@@ -45,7 +47,8 @@ public class Bot extends ListenerAdapter
 
         // args[0] should be the token
         // We don't need any intents for this bot. Slash commands work without any intents!
-        JDA jda = JDABuilder.createLight(args[0], intents)
+        JDA jda = JDABuilder.createDefault(args[0], intents)
+                .setEventPassthrough(true)
                 .addEventListeners(new Bot())
                 .setActivity(Activity.watching("PornHub kids"))
                 //.enableCache(CacheFlag.VOICE_STATE)
