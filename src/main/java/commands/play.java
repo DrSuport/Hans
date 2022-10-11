@@ -1,9 +1,17 @@
 package commands;
 
 import lavaplayer.PlayerManager;
+import net.dv8tion.jda.api.JDA;
+import net.dv8tion.jda.api.entities.GuildVoiceState;
+import net.dv8tion.jda.api.entities.Member;
+import net.dv8tion.jda.api.entities.Message;
 import net.dv8tion.jda.api.entities.channel.concrete.TextChannel;
 import net.dv8tion.jda.api.entities.channel.concrete.VoiceChannel;
+import net.dv8tion.jda.api.entities.channel.middleman.AudioChannel;
+import net.dv8tion.jda.api.events.Event;
+import net.dv8tion.jda.api.events.interaction.GenericInteractionCreateEvent;
 import net.dv8tion.jda.api.events.interaction.command.SlashCommandInteractionEvent;
+import net.dv8tion.jda.api.events.message.MessageReceivedEvent;
 import net.dv8tion.jda.api.interactions.commands.OptionMapping;
 import net.dv8tion.jda.api.interactions.commands.OptionType;
 import net.dv8tion.jda.api.interactions.commands.build.OptionData;
@@ -37,8 +45,15 @@ public class play extends ACommand{
         OptionMapping messageOption = event.getOption("url");
         String URL = messageOption.getAsString();
 
-        System.out.println(event.getMember().getVoiceState().inAudioChannel());
+
+        Member member = event.getMember();                              // Member is the context of the user for the specific guild, containing voice state and roles
+        GuildVoiceState voiceState = member.getVoiceState();            // Check the current voice state of the user
+        AudioChannel channel = voiceState.getChannel();
+
+
+
         System.out.println(event.getMember().getVoiceState().getChannel());
+
 
         if(!event.getMember().getVoiceState().inAudioChannel()){
             event.reply("Message").setEphemeral(true) // reply or acknowledge

@@ -10,6 +10,7 @@ import net.dv8tion.jda.api.utils.cache.CacheFlag;
 
 import javax.swing.text.html.Option;
 import java.util.Collections;
+import java.util.EnumSet;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -27,13 +28,28 @@ public class Bot extends ListenerAdapter
             System.out.println("You have to provide a token as first argument!");
             System.exit(1);
         }
+
+        EnumSet<GatewayIntent> intents = EnumSet.of(
+                // We need messages in guilds to accept commands from users
+                GatewayIntent.GUILD_MESSAGES,
+                // We need voice states to connect to the voice channel
+                GatewayIntent.GUILD_VOICE_STATES,
+                // Enable access to message.getContentRaw()
+                GatewayIntent.MESSAGE_CONTENT
+
+        );
+
+        EnumSet<CacheFlag> flags = EnumSet.of(
+                CacheFlag.VOICE_STATE
+        );
+
         // args[0] should be the token
         // We don't need any intents for this bot. Slash commands work without any intents!
-        JDA jda = JDABuilder.createLight(args[0], Collections.emptyList())
-                .enableIntents(GatewayIntent.GUILD_VOICE_STATES)
-                .enableCache(CacheFlag.VOICE_STATE)
+        JDA jda = JDABuilder.createLight(args[0], intents)
                 .addEventListeners(new Bot())
                 .setActivity(Activity.watching("PornHub kids"))
+                //.enableCache(CacheFlag.VOICE_STATE)
+                .enableCache(flags)
                 .build();
 
         jda.awaitReady();
