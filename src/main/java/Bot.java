@@ -8,8 +8,6 @@ import net.dv8tion.jda.api.interactions.commands.build.OptionData;
 import net.dv8tion.jda.api.requests.GatewayIntent;
 import net.dv8tion.jda.api.utils.cache.CacheFlag;
 
-import javax.swing.text.html.Option;
-import java.util.Collections;
 import java.util.EnumSet;
 import java.util.HashMap;
 import java.util.Map;
@@ -51,7 +49,6 @@ public class Bot extends ListenerAdapter
                 .setEventPassthrough(true)
                 .addEventListeners(new Bot())
                 .setActivity(Activity.watching("PornHub kids"))
-                //.enableCache(CacheFlag.VOICE_STATE)
                 .enableCache(flags)
                 .build();
 
@@ -69,6 +66,12 @@ public class Bot extends ListenerAdapter
 
         //Music commands
         addCommand(new play());
+        addCommand(new stop());
+        addCommand(new skip());
+        addCommand(new current());
+        addCommand(new queue());
+        addCommand(new loop());
+        addCommand(new leave());
 
 
         for (Map.Entry<String, ACommand> entry : commands.entrySet()){
