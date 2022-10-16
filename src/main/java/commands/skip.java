@@ -8,7 +8,6 @@ import net.dv8tion.jda.api.interactions.commands.build.OptionData;
 
 
 public class skip extends ACommand{
-    private static PlayerManager INSTANCE;
     public static String name = "skip";
     public static String description = "Skip's the current song";
     public static String access = null;
@@ -22,7 +21,7 @@ public class skip extends ACommand{
 
     @Override
     public void Execute(SlashCommandInteractionEvent event) {
-        final GuildMusicManager musicManager = getINSTANCE().getMusicManager(event.getGuild());
+        final GuildMusicManager musicManager = PlayerManager.getINSTANCE().getMusicManager(event.getGuild());
 
         AudioPlayer audioPlayer = musicManager.scheduler.audioPlayer;
 
@@ -43,10 +42,4 @@ public class skip extends ACommand{
                 ).queue();
     }
 
-    public static PlayerManager getINSTANCE(){
-        if(INSTANCE == null){
-            INSTANCE = new PlayerManager();
-        }
-        return INSTANCE;
-    }
 }

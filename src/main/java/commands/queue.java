@@ -7,7 +7,6 @@ import net.dv8tion.jda.api.interactions.commands.build.OptionData;
 
 
 public class queue extends ACommand{
-    private static PlayerManager INSTANCE;
     public static String name = "queue";
     public static String description = "Shows queue";
     public static String access = null;
@@ -20,14 +19,7 @@ public class queue extends ACommand{
     }
 
     @Override
-    public void Execute(SlashCommandInteractionEvent event) {
+    public void Execute(SlashCommandInteractionEvent event) { //TODO queue execute
 
-    }
-
-    public static PlayerManager getINSTANCE(){
-        if(INSTANCE == null){
-            INSTANCE = new PlayerManager();
-        }
-        return INSTANCE;
     }
 }

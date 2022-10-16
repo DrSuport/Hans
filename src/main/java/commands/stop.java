@@ -7,7 +7,6 @@ import net.dv8tion.jda.api.interactions.commands.build.OptionData;
 
 
 public class stop extends ACommand{
-    private static PlayerManager INSTANCE;
     public static String name = "stop";
     public static String description = "Stop's the current song and clear's the queue";
     public static String access = null;
@@ -21,9 +20,13 @@ public class stop extends ACommand{
 
     @Override
     public void Execute(SlashCommandInteractionEvent event) {
-        final GuildMusicManager musicManager = getINSTANCE().getMusicManager(event.getGuild());
+        final GuildMusicManager musicManager = PlayerManager.getINSTANCE().getMusicManager(event.getGuild());
 
-        musicManager.scheduler.audioPlayer.stopTrack();
+        //musicManager.scheduler.audioPlayer.stopTrack();
+        musicManager.scheduler.queue.clear();
+        musicManager.scheduler.nextTrack();
+
+
 
         event.reply("").setEphemeral(true) // reply or acknowledge
                 .flatMap(v ->
@@ -31,10 +34,5 @@ public class stop extends ACommand{
                 ).queue();
     }
 
-    public static PlayerManager getINSTANCE(){
-        if(INSTANCE == null){
-            INSTANCE = new PlayerManager();
-        }
-        return INSTANCE;
-    }
+
 }

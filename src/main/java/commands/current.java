@@ -10,7 +10,6 @@ import net.dv8tion.jda.api.interactions.commands.build.OptionData;
 
 
 public class current extends ACommand{
-    private static PlayerManager INSTANCE;
     public static String name = "current";
     public static String description = "Show's currently playing song";
     public static String access = null;
@@ -24,12 +23,9 @@ public class current extends ACommand{
 
     @Override
     public void Execute(SlashCommandInteractionEvent event) {
-        final GuildMusicManager musicManager = getINSTANCE().getMusicManager(event.getGuild());
 
-        musicManager.scheduler.audioPlayer.stopTrack();
-
-        final AudioPlayer audioPlayer = musicManager.scheduler.audioPlayer;
-
+        final GuildMusicManager musicManager = PlayerManager.getINSTANCE().getMusicManager(event.getGuild());
+        final AudioPlayer audioPlayer = musicManager.audioPlayer;
         final AudioTrack track = audioPlayer.getPlayingTrack();
 
         event.reply("Checking if any track is playing").queue();
@@ -44,12 +40,5 @@ public class current extends ACommand{
         event.getChannel().sendMessageFormat("Now playing `%s` by `%s` (Link: <%s>)", info.title, info.author, info.uri).queue();
 
 
-    }
-
-    public static PlayerManager getINSTANCE(){
-        if(INSTANCE == null){
-            INSTANCE = new PlayerManager();
-        }
-        return INSTANCE;
     }
 }

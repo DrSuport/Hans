@@ -1,5 +1,7 @@
 package commands;
 
+import com.sedmelluq.discord.lavaplayer.player.AudioPlayer;
+import lavaplayer.GuildMusicManager;
 import lavaplayer.PlayerManager;
 import net.dv8tion.jda.api.entities.GuildVoiceState;
 import net.dv8tion.jda.api.entities.Member;
@@ -49,7 +51,6 @@ public class play extends ACommand{
         event.reply("Searching for channel").setEphemeral(true).queue();
 
 
-
         if(!event.getMember().getVoiceState().inAudioChannel()){
             event.reply("").setEphemeral(true) // reply or acknowledge
                     .flatMap(v ->
@@ -70,6 +71,11 @@ public class play extends ACommand{
         }
 
         event.getHook().editOriginalFormat("Got it!").queue();
+
+        AudioPlayer audioPlayer = PlayerManager.getINSTANCE().getMusicManager(event.getGuild()).audioPlayer;
+
+        //audioPlayer.setPaused(false);
+
 
         PlayerManager.getINSTANCE().loadAndPlay((TextChannel) event.getMessageChannel(), URL);
 

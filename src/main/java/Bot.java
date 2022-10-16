@@ -45,6 +45,7 @@ public class Bot extends ListenerAdapter
 
         // args[0] should be the token
         // We don't need any intents for this bot. Slash commands work without any intents!
+        // We actually do need 'em :P
         JDA jda = JDABuilder.createDefault(args[0], intents)
                 .setEventPassthrough(true)
                 .addEventListeners(new Bot())
@@ -82,6 +83,8 @@ public class Bot extends ListenerAdapter
 
             if(optionData!=null) jda.upsertCommand(name, description).addOption(optionData.getType(), optionData.getName(), optionData.getDescription(), optionData.isRequired()).queue();
             else jda.upsertCommand(name, description).queue();
+
+
         }
     }
 
