@@ -85,6 +85,7 @@ public class Bot extends ListenerAdapter
             if(optionData!=null) jda.upsertCommand(name, description).addOption(optionData.getType(), optionData.getName(), optionData.getDescription(), optionData.isRequired()).queue();
             else jda.upsertCommand(name, description).queue();
 
+            //System.out.println("Name: " + name + "; Description: " + description);
 
         }
     }

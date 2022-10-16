@@ -25,7 +25,7 @@ public class shuffle extends ACommand{
     }
 
     @Override
-    public void Execute(SlashCommandInteractionEvent event) { //TODO shuffle execute
+    public void Execute(SlashCommandInteractionEvent event) {
         final GuildMusicManager musicManager = PlayerManager.getINSTANCE().getMusicManager(event.getGuild());
 
         ArrayList<AudioTrack> audioTracks = new ArrayList<>();
