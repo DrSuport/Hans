@@ -25,6 +25,7 @@ public class play extends ACommand{
     public static OptionData option = new OptionData(OptionType.STRING, "url", "URL to youtube video or playlist", true);
 
 
+
     public boolean isUrl(String url){
         try{
             new URI(url);
