@@ -32,6 +32,11 @@ public class queue extends ACommand{
 
         int page;
 
+        ArrayList<AudioTrack> audioTracks = new ArrayList<>();
+
+        musicManager.scheduler.queue.drainTo(audioTracks);
+        musicManager.scheduler.queue.addAll(audioTracks);
+
         OptionMapping messageOption = event.getOption("page");
         if(messageOption != null){
             page = messageOption.getAsInt();
@@ -44,16 +49,17 @@ public class queue extends ACommand{
         int start = 20*page;
         int end = 20*(page+1);
 
-        ArrayList<AudioTrack> audioTracks = new ArrayList<>();
+        if(end>audioTracks.size()) end = audioTracks.size();
 
-        musicManager.scheduler.queue.drainTo(audioTracks);
-        musicManager.scheduler.queue.addAll(audioTracks);
+
 
 
         for (int i = start; i < end; i++) {
             AudioTrack track = audioTracks.get(i);
-            response.append(++i).append(". **'").append(track.getInfo().title).append("'** by **'").append(track.getInfo().author).append("'**\n");
+            response.append(i).append(". **'").append(track.getInfo().title).append("'** by **'").append(track.getInfo().author).append("'**\n");
         }
+
+        if(end!=audioTracks.size()) response.append("And ").append(audioTracks.size() - end).append(" more...");
 
         final String out = response.toString();
 
