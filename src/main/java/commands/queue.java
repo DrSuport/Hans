@@ -25,7 +25,7 @@ public class queue extends ACommand{
     }
 
     @Override
-    public void Execute(SlashCommandInteractionEvent event) { //TODO queue execute
+    public void Execute(SlashCommandInteractionEvent event) {
         final GuildMusicManager musicManager = PlayerManager.getINSTANCE().getMusicManager(event.getGuild());
 
         StringBuilder response = new StringBuilder();
