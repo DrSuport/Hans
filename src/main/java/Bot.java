@@ -73,6 +73,7 @@ public class Bot extends ListenerAdapter
         addCommand(new queue());
         addCommand(new loop());
         addCommand(new leave());
+        addCommand(new shuffle());
 
 
         for (Map.Entry<String, ACommand> entry : commands.entrySet()){

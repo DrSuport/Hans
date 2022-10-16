@@ -72,10 +72,6 @@ public class play extends ACommand{
 
         event.getHook().editOriginalFormat("Got it!").queue();
 
-        AudioPlayer audioPlayer = PlayerManager.getINSTANCE().getMusicManager(event.getGuild()).audioPlayer;
-
-        //audioPlayer.setPaused(false);
-
 
         PlayerManager.getINSTANCE().loadAndPlay((TextChannel) event.getMessageChannel(), URL);
 

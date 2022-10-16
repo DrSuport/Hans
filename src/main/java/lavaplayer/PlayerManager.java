@@ -43,8 +43,6 @@ public class PlayerManager {
 
         this.audioPlayerManager.loadItemOrdered(musicManager, trackURL, new AudioLoadResultHandler() {
 
-
-
             @Override
             public void trackLoaded(AudioTrack audioTrack) {
                 musicManager.scheduler.queue(audioTrack);
@@ -57,19 +55,20 @@ public class PlayerManager {
             public void playlistLoaded(AudioPlaylist audioPlaylist) {
                 final List<AudioTrack> tracks = audioPlaylist.getTracks();
                 if(!tracks.isEmpty()){
-                    musicManager.scheduler.queue(tracks.get(0));
                     textChannel.sendMessage("Adding to queue **'" + tracks.get(0).getInfo().title + "'** by **'" + tracks.get(0).getInfo().author + "'**").queue();
+                    musicManager.scheduler.queue(tracks.remove(0));
+                    while(!tracks.isEmpty()) musicManager.scheduler.queue(tracks.remove(0));
                 }
             }
 
             @Override
             public void noMatches() {
-
+                textChannel.sendMessage("No matches").queue();
             }
 
             @Override
             public void loadFailed(FriendlyException e) {
-
+                textChannel.sendMessage(e.getMessage()).queue();
             }
         });
     }
