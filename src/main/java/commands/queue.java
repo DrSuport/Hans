@@ -56,7 +56,7 @@ public class queue extends ACommand{
 
         for (int i = start; i < end; i++) {
             AudioTrack track = audioTracks.get(i);
-            response.append(i).append(". **'").append(track.getInfo().title).append("'** by **'").append(track.getInfo().author).append("'**\n");
+            response.append(i+1).append(". **'").append(track.getInfo().title).append("'** by **'").append(track.getInfo().author).append("'**\n");
         }
 
         if(end!=audioTracks.size()) response.append("And ").append(audioTracks.size() - end).append(" more...");
