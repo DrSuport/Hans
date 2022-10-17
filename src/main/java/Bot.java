@@ -2,6 +2,10 @@ import commands.*;
 import net.dv8tion.jda.api.JDA;
 import net.dv8tion.jda.api.JDABuilder;
 import net.dv8tion.jda.api.entities.Activity;
+import net.dv8tion.jda.api.entities.Member;
+import net.dv8tion.jda.api.entities.channel.Channel;
+import net.dv8tion.jda.api.entities.channel.concrete.VoiceChannel;
+import net.dv8tion.jda.api.events.guild.voice.GuildVoiceUpdateEvent;
 import net.dv8tion.jda.api.events.interaction.command.SlashCommandInteractionEvent;
 import net.dv8tion.jda.api.hooks.ListenerAdapter;
 import net.dv8tion.jda.api.interactions.commands.build.OptionData;
@@ -77,6 +81,8 @@ public class Bot extends ListenerAdapter
         addCommand(new invite());
 
 
+
+
         for (Map.Entry<String, ACommand> entry : commands.entrySet()){
             ACommand command = entry.getValue();
             OptionData optionData = command.getOption();
@@ -89,6 +95,18 @@ public class Bot extends ListenerAdapter
             System.out.println("Name: " + name + "; Description: " + description);
 
         }
+    }
+
+    @Override
+    public void onGuildVoiceUpdate(GuildVoiceUpdateEvent event) {
+
+        VoiceChannel voiceChannel = (VoiceChannel) event.getChannelJoined();
+
+        for(Member member : voiceChannel.getMembers()){
+            RecieveAudio ra = new RecieveAudio();
+
+        }
+
     }
 
     @Override
