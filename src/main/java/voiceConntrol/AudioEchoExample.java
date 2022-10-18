@@ -1,4 +1,4 @@
-/*
+package voiceConntrol;/*
  * Copyright 2015 Austin Keener, Michael Ritter, Florian Spieß, and the JDA contributors
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,6 +23,7 @@ import net.dv8tion.jda.api.entities.*;
 import net.dv8tion.jda.api.entities.channel.concrete.VoiceChannel;
 import net.dv8tion.jda.api.entities.channel.middleman.AudioChannel;
 import net.dv8tion.jda.api.entities.channel.middleman.MessageChannel;
+import net.dv8tion.jda.api.events.interaction.command.SlashCommandInteractionEvent;
 import net.dv8tion.jda.api.events.message.MessageReceivedEvent;
 import net.dv8tion.jda.api.hooks.ListenerAdapter;
 import net.dv8tion.jda.api.managers.AudioManager;
@@ -90,7 +91,7 @@ public class AudioEchoExample extends ListenerAdapter
         }
         else if (content.equals("!echo"))
         {
-            onEchoCommand(event);
+            //onEchoCommand(event);
         }
     }
 
@@ -100,7 +101,7 @@ public class AudioEchoExample extends ListenerAdapter
      * @param event
      *        The event for this command
      */
-    private void onEchoCommand(MessageReceivedEvent event)
+    public void onEchoCommand(SlashCommandInteractionEvent event)
     {
         // Note: None of these can be null due to our configuration with the JDABuilder!
         Member member = event.getMember();                              // Member is the context of the user for the specific guild, containing voice state and roles
