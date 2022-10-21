@@ -89,6 +89,13 @@
             <artifactId>lavaplayer</artifactId>
             <version>1.3.78</version>
         </dependency>
+        <!-- https://mavenlibs.com/maven/dependency/com.alphacephei/vosk -->
+        <dependency>
+            <groupId>com.alphacephei</groupId>
+            <artifactId>vosk</artifactId>
+            <version>0.3.38</version>
+        </dependency>
+
 
     </dependencies>
 
