@@ -10,6 +10,8 @@ import net.dv8tion.jda.api.hooks.ListenerAdapter;
 import net.dv8tion.jda.api.interactions.commands.build.OptionData;
 import net.dv8tion.jda.api.requests.GatewayIntent;
 import net.dv8tion.jda.api.utils.cache.CacheFlag;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.util.EnumSet;
 import java.util.HashMap;
@@ -17,6 +19,9 @@ import java.util.Map;
 
 public class Bot extends ListenerAdapter
 {
+
+    public static Logger logger;
+
     private static Map<String, ACommand> commands = new HashMap<>();
 
     private static void addCommand(ACommand target){
@@ -24,6 +29,9 @@ public class Bot extends ListenerAdapter
     }
 
     public static void main(String[] args) throws InterruptedException {
+
+        logger = LoggerFactory.getLogger("SampleLogger");
+
 
         if (args.length < 1) {
             System.out.println("You have to provide a token as first argument!");
