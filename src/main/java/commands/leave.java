@@ -22,6 +22,7 @@ public class leave extends ACommand{
 
     @Override
     public void Execute(SlashCommandInteractionEvent event) {
+        super.Execute(event);
         if(!event.getMember().getVoiceState().inAudioChannel()){
             event.reply("").setEphemeral(true) // reply or acknowledge
                     .flatMap(v ->

@@ -26,6 +26,7 @@ public class queue extends ACommand{
 
     @Override
     public void Execute(SlashCommandInteractionEvent event) {
+        super.Execute(event);
         final GuildMusicManager musicManager = PlayerManager.getINSTANCE().getMusicManager(event.getGuild());
 
         StringBuilder response = new StringBuilder();

@@ -17,13 +17,14 @@ public class current extends ACommand{
 
 
 
+
     public current() {
         super(name, description, access, option);
     }
 
     @Override
     public void Execute(SlashCommandInteractionEvent event) {
-
+        super.Execute(event);
         final GuildMusicManager musicManager = PlayerManager.getINSTANCE().getMusicManager(event.getGuild());
         final AudioPlayer audioPlayer = musicManager.audioPlayer;
         final AudioTrack track = audioPlayer.getPlayingTrack();

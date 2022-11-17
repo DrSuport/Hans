@@ -25,6 +25,7 @@ public class inspire extends ACommand {
 
     @Override
     public void Execute(SlashCommandInteractionEvent event){
+        super.Execute(event);
         try {
             URLConnection connection = new URL("https://inspirobot.me/api?generate=true").openConnection();
             InputStream input = connection.getInputStream();

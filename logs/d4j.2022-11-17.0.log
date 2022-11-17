@@ -1,0 +1,439 @@
+2022-11-17 20:03:05.864 [main] DEBUG SampleLogger                             : Logging started!
+2022-11-17 20:03:06.564 [JDA RateLimit-Worker 1] DEBUG n.d.jda.internal.requests.Requester      : Received response with following cf-rays: [76bab97b1b57bf6a-WAW]
+2022-11-17 20:03:06.711 [main] INFO  net.dv8tion.jda.api.JDA                  : Login Successful!
+2022-11-17 20:03:06.734 [main] DEBUG n.d.j.a.utils.SessionControllerAdapter   : Creating new worker handle for shard pool 0
+2022-11-17 20:03:06.735 [main] DEBUG n.d.j.a.utils.SessionControllerAdapter   : Running worker
+2022-11-17 20:03:06.735 [ConcurrentSessionController-Worker-0] DEBUG n.d.j.a.utils.SessionControllerAdapter   : Running connect node for shard Shard [0 / 1]
+2022-11-17 20:03:06.985 [JDA MainWS-ReadThread] INFO  n.d.j.internal.requests.WebSocketClient  : Connected to WebSocket
+2022-11-17 20:03:06.985 [JDA MainWS-ReadThread] DEBUG n.d.j.internal.requests.WebSocketClient  : Connected with gateway intents: 1000001010001001
+2022-11-17 20:03:06.985 [JDA MainWS-ReadThread] DEBUG n.d.j.internal.requests.WebSocketClient  : Sending Identify-packet...
+2022-11-17 20:03:07.002 [JDA MainWS-ReadThread] DEBUG n.d.j.internal.requests.WebSocketClient  : Got HELLO packet (OP 10). Initializing keep-alive.
+2022-11-17 20:03:07.181 [JDA MainWS-ReadThread] DEBUG n.d.j.i.handle.GuildSetupController      : Setting incomplete count to 1
+2022-11-17 20:03:07.182 [JDA MainWS-ReadThread] DEBUG n.d.j.i.handle.GuildSetupController      : Starting 75 second timeout for 1 guilds
+2022-11-17 20:03:07.260 [JDA MainWS-ReadThread] DEBUG n.d.jda.internal.entities.EntityBuilder  : Finished setup for guild with a null owner. GuildId: 797464369381769227 OwnerId: 384314598628524043
+2022-11-17 20:03:07.262 [JDA MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA                  : Finished Loading!
+2022-11-17 20:03:07.264 [JDA MainWS-ReadThread] DEBUG n.d.j.i.handle.GuildSetupController      : Finished setup for guild 797464369381769227 firing cached events 0
+2022-11-17 20:03:07.314 [main] DEBUG SampleLogger                             : Name: play; Description: Play's music from youtube
+2022-11-17 20:03:07.315 [main] DEBUG SampleLogger                             : Name: ping; Description: Calculate ping of the bot
+2022-11-17 20:03:07.315 [main] DEBUG SampleLogger                             : Name: say; Description: Makes bot says things
+2022-11-17 20:03:07.315 [main] DEBUG SampleLogger                             : Name: skip; Description: Skip's the current song
+2022-11-17 20:03:07.315 [main] DEBUG SampleLogger                             : Name: echo; Description: Echoes
+2022-11-17 20:03:07.315 [main] DEBUG SampleLogger                             : Name: current; Description: Show's currently playing song
+2022-11-17 20:03:07.316 [main] DEBUG SampleLogger                             : Name: stop; Description: Stop's the current song and clear's the queue
+2022-11-17 20:03:07.316 [main] DEBUG SampleLogger                             : Name: inspire; Description: Inspires you
+2022-11-17 20:03:07.316 [main] DEBUG SampleLogger                             : Name: loop; Description: Loop's currently playing song
+2022-11-17 20:03:07.316 [main] DEBUG SampleLogger                             : Name: leave; Description: Make's bot leave the channel
+2022-11-17 20:03:07.316 [main] DEBUG SampleLogger                             : Name: invite; Description: Generates invitation link for bot
+2022-11-17 20:03:07.316 [main] DEBUG SampleLogger                             : Name: shuffle; Description: Shuffles queue
+2022-11-17 20:03:07.317 [main] DEBUG SampleLogger                             : Name: queue; Description: Shows queue
+2022-11-17 20:03:07.494 [JDA RateLimit-Worker 2] DEBUG n.d.jda.internal.requests.RateLimiter    : Caching bucket hash POST/applications/{application_id}/commands -> db18a1c09af2e1661654351fbf0faf15
+2022-11-17 20:03:07.495 [JDA RateLimit-Worker 2] DEBUG n.d.jda.internal.requests.Requester      : Received response with following cf-rays: [76bab980cee8bf6a-WAW]
+2022-11-17 20:03:07.679 [JDA RateLimit-Worker 1] DEBUG n.d.jda.internal.requests.Requester      : Received response with following cf-rays: [76bab981f8ffbf6a-WAW]
+2022-11-17 20:03:07.911 [JDA RateLimit-Worker 1] DEBUG n.d.jda.internal.requests.Requester      : Received response with following cf-rays: [76bab9831b26bf6a-WAW]
+2022-11-17 20:03:08.095 [JDA RateLimit-Worker 1] DEBUG n.d.jda.internal.requests.Requester      : Received response with following cf-rays: [76bab9848e22bf6a-WAW]
+2022-11-17 20:03:08.341 [JDA RateLimit-Worker 1] DEBUG n.d.jda.internal.requests.Requester      : Received response with following cf-rays: [76bab985a89cbf6a-WAW]
+2022-11-17 20:03:08.341 [JDA RateLimit-Worker 1] DEBUG n.d.jda.internal.requests.RateLimiter    : Backing off 19185 ms for bucket db18a1c09af2e1661654351fbf0faf15:n/a on route POST/applications/{application_id}/commands
+2022-11-17 20:03:27.768 [JDA RateLimit-Worker 3] DEBUG n.d.jda.internal.requests.Requester      : Received response with following cf-rays: [76bab9ff5bc7bfb9-WAW]
+2022-11-17 20:03:28.015 [JDA RateLimit-Worker 3] DEBUG n.d.jda.internal.requests.Requester      : Received response with following cf-rays: [76baba00af8dbfb9-WAW]
+2022-11-17 20:03:28.259 [JDA RateLimit-Worker 3] DEBUG n.d.jda.internal.requests.Requester      : Received response with following cf-rays: [76baba023ab0bfb9-WAW]
+2022-11-17 20:03:28.462 [JDA RateLimit-Worker 3] DEBUG n.d.jda.internal.requests.Requester      : Received response with following cf-rays: [76baba03bd68bfb9-WAW]
+2022-11-17 20:03:28.638 [JDA RateLimit-Worker 3] DEBUG n.d.jda.internal.requests.Requester      : Received response with following cf-rays: [76baba04ff83bfb9-WAW]
+2022-11-17 20:03:28.640 [JDA RateLimit-Worker 3] DEBUG n.d.jda.internal.requests.RateLimiter    : Backing off 19115 ms for bucket db18a1c09af2e1661654351fbf0faf15:n/a on route POST/applications/{application_id}/commands
+2022-11-17 20:03:36.193 [JDA RateLimit-Worker 4] DEBUG n.d.jda.internal.requests.RateLimiter    : Removed 2 expired buckets
+2022-11-17 20:03:47.962 [JDA RateLimit-Worker 2] DEBUG n.d.jda.internal.requests.Requester      : Received response with following cf-rays: [76baba7dbca2fbda-WAW]
+2022-11-17 20:03:48.219 [JDA RateLimit-Worker 2] DEBUG n.d.jda.internal.requests.Requester      : Received response with following cf-rays: [76baba7eded5fbda-WAW]
+2022-11-17 20:03:48.401 [JDA RateLimit-Worker 2] DEBUG n.d.jda.internal.requests.Requester      : Received response with following cf-rays: [76baba807a7dfbda-WAW]
+2022-11-17 20:04:13.732 [JDA Shutdown Hook] DEBUG n.d.jda.internal.requests.RateLimiter    : Removed 1 expired buckets
+2022-11-17 20:04:17.720 [main] DEBUG SampleLogger                             : Bot started!
+2022-11-17 20:04:18.515 [JDA RateLimit-Worker 1] DEBUG n.d.jda.internal.requests.Requester      : Received response with following cf-rays: [76babb3c4eeef288-WAW]
+2022-11-17 20:04:18.678 [main] INFO  net.dv8tion.jda.api.JDA                  : Login Successful!
+2022-11-17 20:04:18.704 [main] DEBUG n.d.j.a.utils.SessionControllerAdapter   : Creating new worker handle for shard pool 0
+2022-11-17 20:04:18.704 [main] DEBUG n.d.j.a.utils.SessionControllerAdapter   : Running worker
+2022-11-17 20:04:18.705 [ConcurrentSessionController-Worker-0] DEBUG n.d.j.a.utils.SessionControllerAdapter   : Running connect node for shard Shard [0 / 1]
+2022-11-17 20:04:18.955 [JDA MainWS-WriteThread] INFO  n.d.j.internal.requests.WebSocketClient  : Connected to WebSocket
+2022-11-17 20:04:18.955 [JDA MainWS-WriteThread] DEBUG n.d.j.internal.requests.WebSocketClient  : Connected with gateway intents: 1000001010001001
+2022-11-17 20:04:18.955 [JDA MainWS-WriteThread] DEBUG n.d.j.internal.requests.WebSocketClient  : Sending Identify-packet...
+2022-11-17 20:04:18.961 [JDA MainWS-ReadThread] DEBUG n.d.j.internal.requests.WebSocketClient  : Got HELLO packet (OP 10). Initializing keep-alive.
+2022-11-17 20:04:19.206 [JDA MainWS-ReadThread] DEBUG n.d.j.i.handle.GuildSetupController      : Setting incomplete count to 1
+2022-11-17 20:04:19.207 [JDA MainWS-ReadThread] DEBUG n.d.j.i.handle.GuildSetupController      : Starting 75 second timeout for 1 guilds
+2022-11-17 20:04:19.269 [JDA MainWS-ReadThread] DEBUG n.d.jda.internal.entities.EntityBuilder  : Finished setup for guild with a null owner. GuildId: 797464369381769227 OwnerId: 384314598628524043
+2022-11-17 20:04:19.272 [JDA MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA                  : Finished Loading!
+2022-11-17 20:04:19.273 [JDA MainWS-ReadThread] DEBUG n.d.j.i.handle.GuildSetupController      : Finished setup for guild 797464369381769227 firing cached events 0
+2022-11-17 20:04:19.342 [main] DEBUG SampleLogger                             : Name: play; Description: Play's music from youtube
+2022-11-17 20:04:19.343 [main] DEBUG SampleLogger                             : Name: ping; Description: Calculate ping of the bot
+2022-11-17 20:04:19.344 [main] DEBUG SampleLogger                             : Name: say; Description: Makes bot says things
+2022-11-17 20:04:19.344 [main] DEBUG SampleLogger                             : Name: skip; Description: Skip's the current song
+2022-11-17 20:04:19.344 [main] DEBUG SampleLogger                             : Name: echo; Description: Echoes
+2022-11-17 20:04:19.344 [main] DEBUG SampleLogger                             : Name: current; Description: Show's currently playing song
+2022-11-17 20:04:19.345 [main] DEBUG SampleLogger                             : Name: stop; Description: Stop's the current song and clear's the queue
+2022-11-17 20:04:19.345 [main] DEBUG SampleLogger                             : Name: inspire; Description: Inspires you
+2022-11-17 20:04:19.345 [main] DEBUG SampleLogger                             : Name: loop; Description: Loop's currently playing song
+2022-11-17 20:04:19.345 [main] DEBUG SampleLogger                             : Name: leave; Description: Make's bot leave the channel
+2022-11-17 20:04:19.346 [main] DEBUG SampleLogger                             : Name: invite; Description: Generates invitation link for bot
+2022-11-17 20:04:19.346 [main] DEBUG SampleLogger                             : Name: shuffle; Description: Shuffles queue
+2022-11-17 20:04:19.346 [main] DEBUG SampleLogger                             : Name: queue; Description: Shows queue
+2022-11-17 20:04:19.519 [JDA RateLimit-Worker 2] DEBUG n.d.jda.internal.requests.RateLimiter    : Caching bucket hash POST/applications/{application_id}/commands -> db18a1c09af2e1661654351fbf0faf15
+2022-11-17 20:04:19.519 [JDA RateLimit-Worker 2] DEBUG n.d.jda.internal.requests.Requester      : Received response with following cf-rays: [76babb42ff03f288-WAW]
+2022-11-17 20:04:19.724 [JDA RateLimit-Worker 1] DEBUG n.d.jda.internal.requests.Requester      : Received response with following cf-rays: [76babb44186af288-WAW]
+2022-11-17 20:04:19.949 [JDA RateLimit-Worker 1] DEBUG n.d.jda.internal.requests.Requester      : Received response with following cf-rays: [76babb4559ebf288-WAW]
+2022-11-17 20:04:20.123 [JDA RateLimit-Worker 1] DEBUG n.d.jda.internal.requests.Requester      : Received response with following cf-rays: [76babb46cc6cf288-WAW]
+2022-11-17 20:04:20.337 [JDA RateLimit-Worker 1] DEBUG n.d.jda.internal.requests.Requester      : Received response with following cf-rays: [76babb47de0bf288-WAW]
+2022-11-17 20:04:20.338 [JDA RateLimit-Worker 1] DEBUG n.d.jda.internal.requests.RateLimiter    : Backing off 19206 ms for bucket db18a1c09af2e1661654351fbf0faf15:n/a on route POST/applications/{application_id}/commands
+2022-11-17 20:04:39.790 [JDA RateLimit-Worker 3] DEBUG n.d.jda.internal.requests.Requester      : Received response with following cf-rays: [76babbc1793acca3-WAW]
+2022-11-17 20:04:39.978 [JDA RateLimit-Worker 3] DEBUG n.d.jda.internal.requests.Requester      : Received response with following cf-rays: [76babbc2caa7cca3-WAW]
+2022-11-17 20:04:40.203 [JDA RateLimit-Worker 3] DEBUG n.d.jda.internal.requests.Requester      : Received response with following cf-rays: [76babbc3fbd9cca3-WAW]
+2022-11-17 20:04:40.388 [JDA RateLimit-Worker 3] DEBUG n.d.jda.internal.requests.Requester      : Received response with following cf-rays: [76babbc55d8ccca3-WAW]
+2022-11-17 20:04:40.588 [JDA RateLimit-Worker 3] DEBUG n.d.jda.internal.requests.Requester      : Received response with following cf-rays: [76babbc68f0dcca3-WAW]
+2022-11-17 20:04:40.589 [JDA RateLimit-Worker 3] DEBUG n.d.jda.internal.requests.RateLimiter    : Backing off 19200 ms for bucket db18a1c09af2e1661654351fbf0faf15:n/a on route POST/applications/{application_id}/commands
+2022-11-17 20:04:48.057 [JDA RateLimit-Worker 2] DEBUG n.d.jda.internal.requests.RateLimiter    : Removed 2 expired buckets
+2022-11-17 20:05:00.043 [JDA RateLimit-Worker 4] DEBUG n.d.jda.internal.requests.Requester      : Received response with following cf-rays: [76babc3ffe2abf56-WAW]
+2022-11-17 20:05:00.240 [JDA RateLimit-Worker 4] DEBUG n.d.jda.internal.requests.Requester      : Received response with following cf-rays: [76babc415935bf56-WAW]
+2022-11-17 20:05:00.439 [JDA RateLimit-Worker 4] DEBUG n.d.jda.internal.requests.Requester      : Received response with following cf-rays: [76babc429b89bf56-WAW]
+2022-11-17 20:05:48.055 [JDA RateLimit-Worker 1] DEBUG n.d.jda.internal.requests.RateLimiter    : Removed 1 expired buckets
+2022-11-17 20:05:54.375 [main] INFO  SampleLogger                             : Bot started!
+2022-11-17 20:05:55.210 [JDA RateLimit-Worker 1] DEBUG n.d.jda.internal.requests.Requester      : Received response with following cf-rays: [76babd989c4bbfd0-WAW]
+2022-11-17 20:05:55.369 [main] INFO  net.dv8tion.jda.api.JDA                  : Login Successful!
+2022-11-17 20:05:55.393 [main] DEBUG n.d.j.a.utils.SessionControllerAdapter   : Creating new worker handle for shard pool 0
+2022-11-17 20:05:55.394 [main] DEBUG n.d.j.a.utils.SessionControllerAdapter   : Running worker
+2022-11-17 20:05:55.394 [ConcurrentSessionController-Worker-0] DEBUG n.d.j.a.utils.SessionControllerAdapter   : Running connect node for shard Shard [0 / 1]
+2022-11-17 20:05:55.658 [JDA MainWS-WriteThread] INFO  n.d.j.internal.requests.WebSocketClient  : Connected to WebSocket
+2022-11-17 20:05:55.658 [JDA MainWS-WriteThread] DEBUG n.d.j.internal.requests.WebSocketClient  : Connected with gateway intents: 1000001010001001
+2022-11-17 20:05:55.658 [JDA MainWS-WriteThread] DEBUG n.d.j.internal.requests.WebSocketClient  : Sending Identify-packet...
+2022-11-17 20:05:55.663 [JDA MainWS-ReadThread] DEBUG n.d.j.internal.requests.WebSocketClient  : Got HELLO packet (OP 10). Initializing keep-alive.
+2022-11-17 20:05:55.943 [JDA MainWS-ReadThread] DEBUG n.d.j.i.handle.GuildSetupController      : Setting incomplete count to 1
+2022-11-17 20:05:55.943 [JDA MainWS-ReadThread] DEBUG n.d.j.i.handle.GuildSetupController      : Starting 75 second timeout for 1 guilds
+2022-11-17 20:05:56.003 [JDA MainWS-ReadThread] DEBUG n.d.jda.internal.entities.EntityBuilder  : Finished setup for guild with a null owner. GuildId: 797464369381769227 OwnerId: 384314598628524043
+2022-11-17 20:05:56.005 [JDA MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA                  : Finished Loading!
+2022-11-17 20:05:56.007 [JDA MainWS-ReadThread] DEBUG n.d.j.i.handle.GuildSetupController      : Finished setup for guild 797464369381769227 firing cached events 0
+2022-11-17 20:05:56.029 [main] INFO  SampleLogger                             : Loading commands...
+2022-11-17 20:05:56.038 [main] INFO  SampleLogger                             : Name: play; Description: Play's music from youtube
+2022-11-17 20:05:56.038 [main] INFO  SampleLogger                             : Name: ping; Description: Calculate ping of the bot
+2022-11-17 20:05:56.039 [main] INFO  SampleLogger                             : Name: say; Description: Makes bot says things
+2022-11-17 20:05:56.039 [main] INFO  SampleLogger                             : Name: skip; Description: Skip's the current song
+2022-11-17 20:05:56.039 [main] INFO  SampleLogger                             : Name: echo; Description: Echoes
+2022-11-17 20:05:56.040 [main] INFO  SampleLogger                             : Name: current; Description: Show's currently playing song
+2022-11-17 20:05:56.040 [main] INFO  SampleLogger                             : Name: stop; Description: Stop's the current song and clear's the queue
+2022-11-17 20:05:56.040 [main] INFO  SampleLogger                             : Name: inspire; Description: Inspires you
+2022-11-17 20:05:56.040 [main] INFO  SampleLogger                             : Name: loop; Description: Loop's currently playing song
+2022-11-17 20:05:56.041 [main] INFO  SampleLogger                             : Name: leave; Description: Make's bot leave the channel
+2022-11-17 20:05:56.041 [main] INFO  SampleLogger                             : Name: invite; Description: Generates invitation link for bot
+2022-11-17 20:05:56.041 [main] INFO  SampleLogger                             : Name: shuffle; Description: Shuffles queue
+2022-11-17 20:05:56.041 [main] INFO  SampleLogger                             : Name: queue; Description: Shows queue
+2022-11-17 20:05:56.041 [main] INFO  SampleLogger                             : Loading commands completed!
+2022-11-17 20:05:56.235 [JDA RateLimit-Worker 2] DEBUG n.d.jda.internal.requests.RateLimiter    : Caching bucket hash POST/applications/{application_id}/commands -> db18a1c09af2e1661654351fbf0faf15
+2022-11-17 20:05:56.235 [JDA RateLimit-Worker 2] DEBUG n.d.jda.internal.requests.Requester      : Received response with following cf-rays: [76babd9f5afabfd0-WAW]
+2022-11-17 20:05:56.415 [JDA RateLimit-Worker 1] DEBUG n.d.jda.internal.requests.Requester      : Received response with following cf-rays: [76babda09dabbfd0-WAW]
+2022-11-17 20:05:56.654 [JDA RateLimit-Worker 1] DEBUG n.d.jda.internal.requests.Requester      : Received response with following cf-rays: [76babda1aff0bfd0-WAW]
+2022-11-17 20:05:56.829 [JDA RateLimit-Worker 1] DEBUG n.d.jda.internal.requests.Requester      : Received response with following cf-rays: [76babda33b35bfd0-WAW]
+2022-11-17 20:05:57.038 [JDA RateLimit-Worker 1] DEBUG n.d.jda.internal.requests.Requester      : Received response with following cf-rays: [76babda44deabfd0-WAW]
+2022-11-17 20:05:57.039 [JDA RateLimit-Worker 1] DEBUG n.d.jda.internal.requests.RateLimiter    : Backing off 19203 ms for bucket db18a1c09af2e1661654351fbf0faf15:n/a on route POST/applications/{application_id}/commands
+2022-11-17 20:06:16.456 [JDA RateLimit-Worker 3] DEBUG n.d.jda.internal.requests.Requester      : Received response with following cf-rays: [76babe1dc951bff0-WAW]
+2022-11-17 20:06:16.712 [JDA RateLimit-Worker 3] DEBUG n.d.jda.internal.requests.Requester      : Received response with following cf-rays: [76babe1efbadbff0-WAW]
+2022-11-17 20:06:16.897 [JDA RateLimit-Worker 3] DEBUG n.d.jda.internal.requests.Requester      : Received response with following cf-rays: [76babe208f33bff0-WAW]
+2022-11-17 20:06:17.117 [JDA RateLimit-Worker 3] DEBUG n.d.jda.internal.requests.Requester      : Received response with following cf-rays: [76babe21ba19bff0-WAW]
+2022-11-17 20:06:17.281 [JDA RateLimit-Worker 3] DEBUG n.d.jda.internal.requests.Requester      : Received response with following cf-rays: [76babe231d39bff0-WAW]
+2022-11-17 20:06:17.282 [JDA RateLimit-Worker 3] DEBUG n.d.jda.internal.requests.RateLimiter    : Backing off 19168 ms for bucket db18a1c09af2e1661654351fbf0faf15:n/a on route POST/applications/{application_id}/commands
+2022-11-17 20:06:24.731 [JDA RateLimit-Worker 4] DEBUG n.d.jda.internal.requests.RateLimiter    : Removed 2 expired buckets
+2022-11-17 20:06:36.674 [JDA RateLimit-Worker 2] DEBUG n.d.jda.internal.requests.Requester      : Received response with following cf-rays: [76babe9c2d80bfc6-WAW]
+2022-11-17 20:06:36.888 [JDA RateLimit-Worker 2] DEBUG n.d.jda.internal.requests.Requester      : Received response with following cf-rays: [76babe9d582bbfc6-WAW]
+2022-11-17 20:06:37.071 [JDA RateLimit-Worker 2] DEBUG n.d.jda.internal.requests.Requester      : Received response with following cf-rays: [76babe9eaa7fbfc6-WAW]
+2022-11-17 20:07:24.736 [JDA RateLimit-Worker 1] DEBUG n.d.jda.internal.requests.RateLimiter    : Removed 1 expired buckets
+2022-11-17 20:18:04.984 [main] INFO  SampleLogger                             : ----------------------------------------------------------------------------
+2022-11-17 20:18:04.986 [main] INFO  SampleLogger                             : Bot started!
+2022-11-17 20:18:05.682 [JDA RateLimit-Worker 1] DEBUG n.d.jda.internal.requests.Requester      : Received response with following cf-rays: [76bacf6e7a8fbf80-WAW]
+2022-11-17 20:18:05.834 [main] INFO  net.dv8tion.jda.api.JDA                  : Login Successful!
+2022-11-17 20:18:05.857 [main] DEBUG n.d.j.a.utils.SessionControllerAdapter   : Creating new worker handle for shard pool 0
+2022-11-17 20:18:05.857 [main] DEBUG n.d.j.a.utils.SessionControllerAdapter   : Running worker
+2022-11-17 20:18:05.857 [ConcurrentSessionController-Worker-0] DEBUG n.d.j.a.utils.SessionControllerAdapter   : Running connect node for shard Shard [0 / 1]
+2022-11-17 20:18:06.110 [JDA MainWS-ReadThread] INFO  n.d.j.internal.requests.WebSocketClient  : Connected to WebSocket
+2022-11-17 20:18:06.110 [JDA MainWS-ReadThread] DEBUG n.d.j.internal.requests.WebSocketClient  : Connected with gateway intents: 1000001010001001
+2022-11-17 20:18:06.111 [JDA MainWS-ReadThread] DEBUG n.d.j.internal.requests.WebSocketClient  : Sending Identify-packet...
+2022-11-17 20:18:06.126 [JDA MainWS-ReadThread] DEBUG n.d.j.internal.requests.WebSocketClient  : Got HELLO packet (OP 10). Initializing keep-alive.
+2022-11-17 20:18:06.299 [JDA MainWS-ReadThread] DEBUG n.d.j.i.handle.GuildSetupController      : Setting incomplete count to 1
+2022-11-17 20:18:06.300 [JDA MainWS-ReadThread] DEBUG n.d.j.i.handle.GuildSetupController      : Starting 75 second timeout for 1 guilds
+2022-11-17 20:18:06.361 [JDA MainWS-ReadThread] DEBUG n.d.jda.internal.entities.EntityBuilder  : Finished setup for guild with a null owner. GuildId: 797464369381769227 OwnerId: 384314598628524043
+2022-11-17 20:18:06.363 [JDA MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA                  : Finished Loading!
+2022-11-17 20:18:06.364 [JDA MainWS-ReadThread] DEBUG n.d.j.i.handle.GuildSetupController      : Finished setup for guild 797464369381769227 firing cached events 0
+2022-11-17 20:18:06.423 [main] INFO  SampleLogger                             : Loading commands...
+2022-11-17 20:18:06.433 [main] INFO  SampleLogger                             : Name: play; Description: Play's music from youtube
+2022-11-17 20:18:06.433 [main] INFO  SampleLogger                             : Name: ping; Description: Calculate ping of the bot
+2022-11-17 20:18:06.434 [main] INFO  SampleLogger                             : Name: say; Description: Makes bot says things
+2022-11-17 20:18:06.434 [main] INFO  SampleLogger                             : Name: skip; Description: Skip's the current song
+2022-11-17 20:18:06.434 [main] INFO  SampleLogger                             : Name: echo; Description: Echoes
+2022-11-17 20:18:06.434 [main] INFO  SampleLogger                             : Name: current; Description: Show's currently playing song
+2022-11-17 20:18:06.435 [main] INFO  SampleLogger                             : Name: stop; Description: Stop's the current song and clear's the queue
+2022-11-17 20:18:06.435 [main] INFO  SampleLogger                             : Name: inspire; Description: Inspires you
+2022-11-17 20:18:06.435 [main] INFO  SampleLogger                             : Name: loop; Description: Loop's currently playing song
+2022-11-17 20:18:06.435 [main] INFO  SampleLogger                             : Name: leave; Description: Make's bot leave the channel
+2022-11-17 20:18:06.435 [main] INFO  SampleLogger                             : Name: invite; Description: Generates invitation link for bot
+2022-11-17 20:18:06.435 [main] INFO  SampleLogger                             : Name: shuffle; Description: Shuffles queue
+2022-11-17 20:18:06.436 [main] INFO  SampleLogger                             : Name: queue; Description: Shows queue
+2022-11-17 20:18:06.436 [main] INFO  SampleLogger                             : Loading commands completed!
+2022-11-17 20:18:06.608 [JDA RateLimit-Worker 2] DEBUG n.d.jda.internal.requests.RateLimiter    : Caching bucket hash POST/applications/{application_id}/commands -> db18a1c09af2e1661654351fbf0faf15
+2022-11-17 20:18:06.608 [JDA RateLimit-Worker 2] DEBUG n.d.jda.internal.requests.Requester      : Received response with following cf-rays: [76bacf745f31bf80-WAW]
+2022-11-17 20:18:06.815 [JDA RateLimit-Worker 1] DEBUG n.d.jda.internal.requests.Requester      : Received response with following cf-rays: [76bacf757980bf80-WAW]
+2022-11-17 20:18:06.985 [JDA RateLimit-Worker 1] DEBUG n.d.jda.internal.requests.Requester      : Received response with following cf-rays: [76bacf76bbebbf80-WAW]
+2022-11-17 20:18:07.192 [JDA RateLimit-Worker 1] DEBUG n.d.jda.internal.requests.Requester      : Received response with following cf-rays: [76bacf77cdbabf80-WAW]
+2022-11-17 20:18:07.424 [JDA RateLimit-Worker 1] DEBUG n.d.jda.internal.requests.Requester      : Received response with following cf-rays: [76bacf79082cbf80-WAW]
+2022-11-17 20:18:07.425 [JDA RateLimit-Worker 1] DEBUG n.d.jda.internal.requests.RateLimiter    : Backing off 19222 ms for bucket db18a1c09af2e1661654351fbf0faf15:n/a on route POST/applications/{application_id}/commands
+2022-11-17 20:18:26.900 [JDA RateLimit-Worker 3] DEBUG n.d.jda.internal.requests.Requester      : Received response with following cf-rays: [76bacff2da98cc7b-WAW]
+2022-11-17 20:18:27.162 [JDA RateLimit-Worker 3] DEBUG n.d.jda.internal.requests.Requester      : Received response with following cf-rays: [76bacff43c41cc7b-WAW]
+2022-11-17 20:18:27.339 [JDA RateLimit-Worker 3] DEBUG n.d.jda.internal.requests.Requester      : Received response with following cf-rays: [76bacff5dea2cc7b-WAW]
+2022-11-17 20:18:27.513 [JDA RateLimit-Worker 3] DEBUG n.d.jda.internal.requests.Requester      : Received response with following cf-rays: [76bacff6f81ecc7b-WAW]
+2022-11-17 20:18:27.716 [JDA RateLimit-Worker 3] DEBUG n.d.jda.internal.requests.Requester      : Received response with following cf-rays: [76bacff8195fcc7b-WAW]
+2022-11-17 20:18:27.717 [JDA RateLimit-Worker 3] DEBUG n.d.jda.internal.requests.RateLimiter    : Backing off 19180 ms for bucket db18a1c09af2e1661654351fbf0faf15:n/a on route POST/applications/{application_id}/commands
+2022-11-17 20:18:35.315 [JDA RateLimit-Worker 4] DEBUG n.d.jda.internal.requests.RateLimiter    : Removed 2 expired buckets
+2022-11-17 20:18:47.102 [JDA RateLimit-Worker 2] DEBUG n.d.jda.internal.requests.Requester      : Received response with following cf-rays: [76bad0716de2f288-WAW]
+2022-11-17 20:18:47.307 [JDA RateLimit-Worker 2] DEBUG n.d.jda.internal.requests.Requester      : Received response with following cf-rays: [76bad0727f87f288-WAW]
+2022-11-17 20:18:47.487 [JDA RateLimit-Worker 2] DEBUG n.d.jda.internal.requests.Requester      : Received response with following cf-rays: [76bad073c95ef288-WAW]
+2022-11-17 20:19:28.482 [JDA Shutdown Hook] DEBUG n.d.jda.internal.requests.RateLimiter    : Removed 1 expired buckets
+2022-11-17 20:19:32.133 [main] INFO  SampleLogger                             : ----------------------------------------------------------------------------
+2022-11-17 20:19:32.135 [main] INFO  SampleLogger                             : Bot started!
+2022-11-17 20:19:32.916 [JDA RateLimit-Worker 1] DEBUG n.d.jda.internal.requests.Requester      : Received response with following cf-rays: [76bad18fba12ffc4-WAW]
+2022-11-17 20:19:33.069 [main] INFO  net.dv8tion.jda.api.JDA                  : Login Successful!
+2022-11-17 20:19:33.095 [main] DEBUG n.d.j.a.utils.SessionControllerAdapter   : Creating new worker handle for shard pool 0
+2022-11-17 20:19:33.095 [main] DEBUG n.d.j.a.utils.SessionControllerAdapter   : Running worker
+2022-11-17 20:19:33.096 [ConcurrentSessionController-Worker-0] DEBUG n.d.j.a.utils.SessionControllerAdapter   : Running connect node for shard Shard [0 / 1]
+2022-11-17 20:19:33.347 [JDA MainWS-WriteThread] INFO  n.d.j.internal.requests.WebSocketClient  : Connected to WebSocket
+2022-11-17 20:19:33.348 [JDA MainWS-WriteThread] DEBUG n.d.j.internal.requests.WebSocketClient  : Connected with gateway intents: 1000001010001001
+2022-11-17 20:19:33.348 [JDA MainWS-WriteThread] DEBUG n.d.j.internal.requests.WebSocketClient  : Sending Identify-packet...
+2022-11-17 20:19:33.357 [JDA MainWS-ReadThread] DEBUG n.d.j.internal.requests.WebSocketClient  : Got HELLO packet (OP 10). Initializing keep-alive.
+2022-11-17 20:19:33.591 [JDA MainWS-ReadThread] DEBUG n.d.j.i.handle.GuildSetupController      : Setting incomplete count to 1
+2022-11-17 20:19:33.592 [JDA MainWS-ReadThread] DEBUG n.d.j.i.handle.GuildSetupController      : Starting 75 second timeout for 1 guilds
+2022-11-17 20:19:33.672 [JDA MainWS-ReadThread] DEBUG n.d.jda.internal.entities.EntityBuilder  : Finished setup for guild with a null owner. GuildId: 797464369381769227 OwnerId: 384314598628524043
+2022-11-17 20:19:33.675 [JDA MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA                  : Finished Loading!
+2022-11-17 20:19:33.677 [JDA MainWS-ReadThread] DEBUG n.d.j.i.handle.GuildSetupController      : Finished setup for guild 797464369381769227 firing cached events 0
+2022-11-17 20:19:33.726 [main] INFO  SampleLogger                             : Loading commands...
+2022-11-17 20:19:33.738 [main] INFO  SampleLogger                             : Name: play; Description: Play's music from youtube
+2022-11-17 20:19:33.739 [main] INFO  SampleLogger                             : Name: ping; Description: Calculate ping of the bot
+2022-11-17 20:19:33.739 [main] INFO  SampleLogger                             : Name: say; Description: Makes bot says things
+2022-11-17 20:19:33.739 [main] INFO  SampleLogger                             : Name: skip; Description: Skip's the current song
+2022-11-17 20:19:33.740 [main] INFO  SampleLogger                             : Name: echo; Description: Echoes
+2022-11-17 20:19:33.740 [main] INFO  SampleLogger                             : Name: current; Description: Show's currently playing song
+2022-11-17 20:19:33.740 [main] INFO  SampleLogger                             : Name: stop; Description: Stop's the current song and clear's the queue
+2022-11-17 20:19:33.740 [main] INFO  SampleLogger                             : Name: inspire; Description: Inspires you
+2022-11-17 20:19:33.740 [main] INFO  SampleLogger                             : Name: loop; Description: Loop's currently playing song
+2022-11-17 20:19:33.740 [main] INFO  SampleLogger                             : Name: leave; Description: Make's bot leave the channel
+2022-11-17 20:19:33.741 [main] INFO  SampleLogger                             : Name: invite; Description: Generates invitation link for bot
+2022-11-17 20:19:33.741 [main] INFO  SampleLogger                             : Name: shuffle; Description: Shuffles queue
+2022-11-17 20:19:33.741 [main] INFO  SampleLogger                             : Name: queue; Description: Shows queue
+2022-11-17 20:19:33.741 [main] INFO  SampleLogger                             : Loading commands completed!
+2022-11-17 20:19:33.922 [JDA RateLimit-Worker 2] DEBUG n.d.jda.internal.requests.RateLimiter    : Caching bucket hash POST/applications/{application_id}/commands -> db18a1c09af2e1661654351fbf0faf15
+2022-11-17 20:19:33.923 [JDA RateLimit-Worker 2] DEBUG n.d.jda.internal.requests.Requester      : Received response with following cf-rays: [76bad195f9a7ffc4-WAW]
+2022-11-17 20:19:34.111 [JDA RateLimit-Worker 1] DEBUG n.d.jda.internal.requests.Requester      : Received response with following cf-rays: [76bad1972b21ffc4-WAW]
+2022-11-17 20:19:34.342 [JDA RateLimit-Worker 1] DEBUG n.d.jda.internal.requests.Requester      : Received response with following cf-rays: [76bad1984c86ffc4-WAW]
+2022-11-17 20:19:34.543 [JDA RateLimit-Worker 1] DEBUG n.d.jda.internal.requests.Requester      : Received response with following cf-rays: [76bad199ce4effc4-WAW]
+2022-11-17 20:19:34.771 [JDA RateLimit-Worker 1] DEBUG n.d.jda.internal.requests.Requester      : Received response with following cf-rays: [76bad19b0fe8ffc4-WAW]
+2022-11-17 20:19:34.772 [JDA RateLimit-Worker 1] DEBUG n.d.jda.internal.requests.RateLimiter    : Backing off 19141 ms for bucket db18a1c09af2e1661654351fbf0faf15:n/a on route POST/applications/{application_id}/commands
+2022-11-17 20:19:54.165 [JDA RateLimit-Worker 3] DEBUG n.d.jda.internal.requests.Requester      : Received response with following cf-rays: [76bad2144956fc87-WAW]
+2022-11-17 20:19:54.357 [JDA RateLimit-Worker 3] DEBUG n.d.jda.internal.requests.Requester      : Received response with following cf-rays: [76bad215acb9fc87-WAW]
+2022-11-17 20:19:54.669 [JDA RateLimit-Worker 3] DEBUG n.d.jda.internal.requests.Requester      : Received response with following cf-rays: [76bad216df65fc87-WAW]
+2022-11-17 20:19:54.845 [JDA RateLimit-Worker 3] DEBUG n.d.jda.internal.requests.Requester      : Received response with following cf-rays: [76bad218cc24fc87-WAW]
+2022-11-17 20:19:55.129 [JDA RateLimit-Worker 3] DEBUG n.d.jda.internal.requests.Requester      : Received response with following cf-rays: [76bad219ee6dfc87-WAW]
+2022-11-17 20:19:55.130 [JDA RateLimit-Worker 3] DEBUG n.d.jda.internal.requests.RateLimiter    : Backing off 19096 ms for bucket db18a1c09af2e1661654351fbf0faf15:n/a on route POST/applications/{application_id}/commands
+2022-11-17 20:20:02.517 [JDA RateLimit-Worker 4] DEBUG n.d.jda.internal.requests.RateLimiter    : Removed 2 expired buckets
+2022-11-17 20:20:14.506 [JDA RateLimit-Worker 2] DEBUG n.d.jda.internal.requests.Requester      : Received response with following cf-rays: [76bad2934e38fbde-WAW]
+2022-11-17 20:20:14.685 [JDA RateLimit-Worker 2] DEBUG n.d.jda.internal.requests.Requester      : Received response with following cf-rays: [76bad294c99dfbde-WAW]
+2022-11-17 20:20:14.893 [JDA RateLimit-Worker 2] DEBUG n.d.jda.internal.requests.Requester      : Received response with following cf-rays: [76bad295ebdcfbde-WAW]
+2022-11-17 20:20:34.120 [JDA Shutdown Hook] DEBUG n.d.jda.internal.requests.RateLimiter    : Removed 1 expired buckets
+2022-11-17 20:20:36.949 [main] INFO  SampleLogger                             : ----------------------------------------------------------------------------
+2022-11-17 20:20:36.950 [main] INFO  SampleLogger                             : Bot started!
+2022-11-17 20:20:37.674 [JDA RateLimit-Worker 1] DEBUG n.d.jda.internal.requests.Requester      : Received response with following cf-rays: [76bad32469a2bff3-WAW]
+2022-11-17 20:20:37.822 [main] INFO  net.dv8tion.jda.api.JDA                  : Login Successful!
+2022-11-17 20:20:37.845 [main] DEBUG n.d.j.a.utils.SessionControllerAdapter   : Creating new worker handle for shard pool 0
+2022-11-17 20:20:37.846 [main] DEBUG n.d.j.a.utils.SessionControllerAdapter   : Running worker
+2022-11-17 20:20:37.846 [ConcurrentSessionController-Worker-0] DEBUG n.d.j.a.utils.SessionControllerAdapter   : Running connect node for shard Shard [0 / 1]
+2022-11-17 20:20:38.097 [JDA MainWS-ReadThread] INFO  n.d.j.internal.requests.WebSocketClient  : Connected to WebSocket
+2022-11-17 20:20:38.097 [JDA MainWS-ReadThread] DEBUG n.d.j.internal.requests.WebSocketClient  : Connected with gateway intents: 1000001010001001
+2022-11-17 20:20:38.097 [JDA MainWS-ReadThread] DEBUG n.d.j.internal.requests.WebSocketClient  : Sending Identify-packet...
+2022-11-17 20:20:38.113 [JDA MainWS-ReadThread] DEBUG n.d.j.internal.requests.WebSocketClient  : Got HELLO packet (OP 10). Initializing keep-alive.
+2022-11-17 20:20:38.302 [JDA MainWS-ReadThread] DEBUG n.d.j.i.handle.GuildSetupController      : Setting incomplete count to 1
+2022-11-17 20:20:38.302 [JDA MainWS-ReadThread] DEBUG n.d.j.i.handle.GuildSetupController      : Starting 75 second timeout for 1 guilds
+2022-11-17 20:20:38.405 [JDA MainWS-ReadThread] DEBUG n.d.jda.internal.entities.EntityBuilder  : Finished setup for guild with a null owner. GuildId: 797464369381769227 OwnerId: 384314598628524043
+2022-11-17 20:20:38.408 [JDA MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA                  : Finished Loading!
+2022-11-17 20:20:38.409 [JDA MainWS-ReadThread] DEBUG n.d.j.i.handle.GuildSetupController      : Finished setup for guild 797464369381769227 firing cached events 0
+2022-11-17 20:20:38.418 [main] INFO  SampleLogger                             : Loading commands...
+2022-11-17 20:20:38.428 [main] INFO  SampleLogger                             : Name: play; Description: Play's music from youtube
+2022-11-17 20:20:38.428 [main] INFO  SampleLogger                             : Name: ping; Description: Calculate ping of the bot
+2022-11-17 20:20:38.429 [main] INFO  SampleLogger                             : Name: say; Description: Makes bot says things
+2022-11-17 20:20:38.429 [main] INFO  SampleLogger                             : Name: skip; Description: Skip's the current song
+2022-11-17 20:20:38.429 [main] INFO  SampleLogger                             : Name: echo; Description: Echoes
+2022-11-17 20:20:38.430 [main] INFO  SampleLogger                             : Name: current; Description: Show's currently playing song
+2022-11-17 20:20:38.430 [main] INFO  SampleLogger                             : Name: stop; Description: Stop's the current song and clear's the queue
+2022-11-17 20:20:38.430 [main] INFO  SampleLogger                             : Name: inspire; Description: Inspires you
+2022-11-17 20:20:38.430 [main] INFO  SampleLogger                             : Name: loop; Description: Loop's currently playing song
+2022-11-17 20:20:38.430 [main] INFO  SampleLogger                             : Name: leave; Description: Make's bot leave the channel
+2022-11-17 20:20:38.431 [main] INFO  SampleLogger                             : Name: invite; Description: Generates invitation link for bot
+2022-11-17 20:20:38.431 [main] INFO  SampleLogger                             : Name: shuffle; Description: Shuffles queue
+2022-11-17 20:20:38.431 [main] INFO  SampleLogger                             : Name: queue; Description: Shows queue
+2022-11-17 20:20:38.431 [main] INFO  SampleLogger                             : Loading commands completed!
+2022-11-17 20:20:38.631 [JDA RateLimit-Worker 2] DEBUG n.d.jda.internal.requests.RateLimiter    : Caching bucket hash POST/applications/{application_id}/commands -> db18a1c09af2e1661654351fbf0faf15
+2022-11-17 20:20:38.631 [JDA RateLimit-Worker 2] DEBUG n.d.jda.internal.requests.Requester      : Received response with following cf-rays: [76bad32a4e38bff3-WAW]
+2022-11-17 20:20:38.867 [JDA RateLimit-Worker 1] DEBUG n.d.jda.internal.requests.Requester      : Received response with following cf-rays: [76bad32b999cbff3-WAW]
+2022-11-17 20:20:39.050 [JDA RateLimit-Worker 1] DEBUG n.d.jda.internal.requests.Requester      : Received response with following cf-rays: [76bad32d0ca8bff3-WAW]
+2022-11-17 20:20:39.243 [JDA RateLimit-Worker 1] DEBUG n.d.jda.internal.requests.Requester      : Received response with following cf-rays: [76bad32e2f40bff3-WAW]
+2022-11-17 20:20:39.433 [JDA RateLimit-Worker 1] DEBUG n.d.jda.internal.requests.Requester      : Received response with following cf-rays: [76bad32f69afbff3-WAW]
+2022-11-17 20:20:39.434 [JDA RateLimit-Worker 1] DEBUG n.d.jda.internal.requests.RateLimiter    : Backing off 19199 ms for bucket db18a1c09af2e1661654351fbf0faf15:n/a on route POST/applications/{application_id}/commands
+2022-11-17 20:20:43.990 [JDA MainWS-ReadThread] INFO  SampleLogger                             : User: Dr.Warmek, used: net.dv8tion.jda.internal.requests.RestActionImpl@58b3122f, on server: Mździungwa
+2022-11-17 20:20:44.250 [JDA RateLimit-Worker 4] DEBUG n.d.jda.internal.requests.Requester      : Received response with following cf-rays: [76bad34d3b0bbff3-WAW]
+2022-11-17 20:20:44.486 [JDA RateLimit-Worker 3] DEBUG n.d.jda.internal.requests.RateLimiter    : Caching bucket hash PATCH/webhooks/{application_id}/{interaction_token}/messages/{message_id} -> 3cd1f278bd0ecaf11e0d2391374c011d
+2022-11-17 20:20:44.486 [JDA RateLimit-Worker 3] DEBUG n.d.jda.internal.requests.Requester      : Received response with following cf-rays: [76bad34ebdb6bff3-WAW]
+2022-11-17 20:20:58.871 [JDA RateLimit-Worker 1] DEBUG n.d.jda.internal.requests.Requester      : Received response with following cf-rays: [76bad3a8c897f2a8-WAW]
+2022-11-17 20:20:59.051 [JDA RateLimit-Worker 1] DEBUG n.d.jda.internal.requests.Requester      : Received response with following cf-rays: [76bad3aa0a48f2a8-WAW]
+2022-11-17 20:20:59.273 [JDA RateLimit-Worker 1] DEBUG n.d.jda.internal.requests.Requester      : Received response with following cf-rays: [76bad3ab2be6f2a8-WAW]
+2022-11-17 20:20:59.479 [JDA RateLimit-Worker 1] DEBUG n.d.jda.internal.requests.Requester      : Received response with following cf-rays: [76bad3ac9d89f2a8-WAW]
+2022-11-17 20:20:59.676 [JDA RateLimit-Worker 1] DEBUG n.d.jda.internal.requests.Requester      : Received response with following cf-rays: [76bad3addfabf2a8-WAW]
+2022-11-17 20:20:59.677 [JDA RateLimit-Worker 1] DEBUG n.d.jda.internal.requests.RateLimiter    : Backing off 19189 ms for bucket db18a1c09af2e1661654351fbf0faf15:n/a on route POST/applications/{application_id}/commands
+2022-11-17 20:21:07.286 [JDA RateLimit-Worker 2] DEBUG n.d.jda.internal.requests.RateLimiter    : Removed 5 expired buckets
+2022-11-17 20:21:19.071 [JDA RateLimit-Worker 4] DEBUG n.d.jda.internal.requests.Requester      : Received response with following cf-rays: [76bad4274ecabf4c-WAW]
+2022-11-17 20:21:19.280 [JDA RateLimit-Worker 4] DEBUG n.d.jda.internal.requests.Requester      : Received response with following cf-rays: [76bad428495cbf4c-WAW]
+2022-11-17 20:21:19.491 [JDA RateLimit-Worker 4] DEBUG n.d.jda.internal.requests.Requester      : Received response with following cf-rays: [76bad4299c32bf4c-WAW]
+2022-11-17 20:21:31.899 [JDA Shutdown Hook] DEBUG n.d.jda.internal.requests.RateLimiter    : Removed 1 expired buckets
+2022-11-17 20:21:34.952 [main] INFO  SampleLogger                             : ----------------------------------------------------------------------------
+2022-11-17 20:21:34.953 [main] INFO  SampleLogger                             : Bot started!
+2022-11-17 20:21:35.686 [JDA RateLimit-Worker 1] DEBUG n.d.jda.internal.requests.Requester      : Received response with following cf-rays: [76bad48f0e6ffbe6-WAW]
+2022-11-17 20:21:35.838 [main] INFO  net.dv8tion.jda.api.JDA                  : Login Successful!
+2022-11-17 20:21:35.861 [main] DEBUG n.d.j.a.utils.SessionControllerAdapter   : Creating new worker handle for shard pool 0
+2022-11-17 20:21:35.862 [main] DEBUG n.d.j.a.utils.SessionControllerAdapter   : Running worker
+2022-11-17 20:21:35.862 [ConcurrentSessionController-Worker-0] DEBUG n.d.j.a.utils.SessionControllerAdapter   : Running connect node for shard Shard [0 / 1]
+2022-11-17 20:21:36.110 [JDA MainWS-WriteThread] INFO  n.d.j.internal.requests.WebSocketClient  : Connected to WebSocket
+2022-11-17 20:21:36.110 [JDA MainWS-WriteThread] DEBUG n.d.j.internal.requests.WebSocketClient  : Connected with gateway intents: 1000001010001001
+2022-11-17 20:21:36.110 [JDA MainWS-WriteThread] DEBUG n.d.j.internal.requests.WebSocketClient  : Sending Identify-packet...
+2022-11-17 20:21:36.117 [JDA MainWS-ReadThread] DEBUG n.d.j.internal.requests.WebSocketClient  : Got HELLO packet (OP 10). Initializing keep-alive.
+2022-11-17 20:21:36.368 [JDA MainWS-ReadThread] DEBUG n.d.j.i.handle.GuildSetupController      : Setting incomplete count to 1
+2022-11-17 20:21:36.368 [JDA MainWS-ReadThread] DEBUG n.d.j.i.handle.GuildSetupController      : Starting 75 second timeout for 1 guilds
+2022-11-17 20:21:36.433 [JDA MainWS-ReadThread] DEBUG n.d.jda.internal.entities.EntityBuilder  : Finished setup for guild with a null owner. GuildId: 797464369381769227 OwnerId: 384314598628524043
+2022-11-17 20:21:36.436 [JDA MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA                  : Finished Loading!
+2022-11-17 20:21:36.437 [JDA MainWS-ReadThread] DEBUG n.d.j.i.handle.GuildSetupController      : Finished setup for guild 797464369381769227 firing cached events 0
+2022-11-17 20:21:36.492 [main] INFO  SampleLogger                             : Loading commands...
+2022-11-17 20:21:36.502 [main] INFO  SampleLogger                             : Name: play; Description: Play's music from youtube
+2022-11-17 20:21:36.502 [main] INFO  SampleLogger                             : Name: ping; Description: Calculate ping of the bot
+2022-11-17 20:21:36.503 [main] INFO  SampleLogger                             : Name: say; Description: Makes bot says things
+2022-11-17 20:21:36.503 [main] INFO  SampleLogger                             : Name: skip; Description: Skip's the current song
+2022-11-17 20:21:36.503 [main] INFO  SampleLogger                             : Name: echo; Description: Echoes
+2022-11-17 20:21:36.503 [main] INFO  SampleLogger                             : Name: current; Description: Show's currently playing song
+2022-11-17 20:21:36.503 [main] INFO  SampleLogger                             : Name: stop; Description: Stop's the current song and clear's the queue
+2022-11-17 20:21:36.504 [main] INFO  SampleLogger                             : Name: inspire; Description: Inspires you
+2022-11-17 20:21:36.504 [main] INFO  SampleLogger                             : Name: loop; Description: Loop's currently playing song
+2022-11-17 20:21:36.504 [main] INFO  SampleLogger                             : Name: leave; Description: Make's bot leave the channel
+2022-11-17 20:21:36.504 [main] INFO  SampleLogger                             : Name: invite; Description: Generates invitation link for bot
+2022-11-17 20:21:36.504 [main] INFO  SampleLogger                             : Name: shuffle; Description: Shuffles queue
+2022-11-17 20:21:36.505 [main] INFO  SampleLogger                             : Name: queue; Description: Shows queue
+2022-11-17 20:21:36.505 [main] INFO  SampleLogger                             : Loading commands completed!
+2022-11-17 20:21:36.728 [JDA RateLimit-Worker 2] DEBUG n.d.jda.internal.requests.RateLimiter    : Caching bucket hash POST/applications/{application_id}/commands -> db18a1c09af2e1661654351fbf0faf15
+2022-11-17 20:21:36.729 [JDA RateLimit-Worker 2] DEBUG n.d.jda.internal.requests.Requester      : Received response with following cf-rays: [76bad4954c19fbe6-WAW]
+2022-11-17 20:21:36.938 [JDA RateLimit-Worker 1] DEBUG n.d.jda.internal.requests.Requester      : Received response with following cf-rays: [76bad496bf63fbe6-WAW]
+2022-11-17 20:21:36.939 [JDA RateLimit-Worker 1] DEBUG n.d.jda.internal.requests.RateLimiter    : Backing off 2150 ms for bucket db18a1c09af2e1661654351fbf0faf15:n/a on route POST/applications/{application_id}/commands
+2022-11-17 20:21:39.322 [JDA RateLimit-Worker 3] DEBUG n.d.jda.internal.requests.Requester      : Received response with following cf-rays: [76bad4a58b3ffbe6-WAW]
+2022-11-17 20:21:39.499 [JDA RateLimit-Worker 3] DEBUG n.d.jda.internal.requests.Requester      : Received response with following cf-rays: [76bad4a6ee3cfbe6-WAW]
+2022-11-17 20:21:39.687 [JDA RateLimit-Worker 3] DEBUG n.d.jda.internal.requests.Requester      : Received response with following cf-rays: [76bad4a7f8bdfbe6-WAW]
+2022-11-17 20:21:39.909 [JDA RateLimit-Worker 3] DEBUG n.d.jda.internal.requests.Requester      : Received response with following cf-rays: [76bad4a92b55fbe6-WAW]
+2022-11-17 20:21:40.118 [JDA RateLimit-Worker 3] DEBUG n.d.jda.internal.requests.Requester      : Received response with following cf-rays: [76bad4aa8ea0fbe6-WAW]
+2022-11-17 20:21:40.119 [JDA RateLimit-Worker 3] DEBUG n.d.jda.internal.requests.RateLimiter    : Backing off 19221 ms for bucket db18a1c09af2e1661654351fbf0faf15:n/a on route POST/applications/{application_id}/commands
+2022-11-17 20:21:41.713 [JDA MainWS-ReadThread] INFO  SampleLogger                             : User: Dr.Warmek, used: ping, on server: Mździungwa
+2022-11-17 20:21:41.992 [JDA RateLimit-Worker 1] DEBUG n.d.jda.internal.requests.Requester      : Received response with following cf-rays: [76bad4b5df1afbe6-WAW]
+2022-11-17 20:21:42.235 [JDA RateLimit-Worker 4] DEBUG n.d.jda.internal.requests.RateLimiter    : Caching bucket hash PATCH/webhooks/{application_id}/{interaction_token}/messages/{message_id} -> 3cd1f278bd0ecaf11e0d2391374c011d
+2022-11-17 20:21:42.235 [JDA RateLimit-Worker 4] DEBUG n.d.jda.internal.requests.Requester      : Received response with following cf-rays: [76bad4b79a97fbe6-WAW]
+2022-11-17 20:21:59.559 [JDA RateLimit-Worker 3] DEBUG n.d.jda.internal.requests.Requester      : Received response with following cf-rays: [76bad5242b95bfeb-WAW]
+2022-11-17 20:21:59.746 [JDA RateLimit-Worker 3] DEBUG n.d.jda.internal.requests.Requester      : Received response with following cf-rays: [76bad5255e89bfeb-WAW]
+2022-11-17 20:21:59.942 [JDA RateLimit-Worker 3] DEBUG n.d.jda.internal.requests.Requester      : Received response with following cf-rays: [76bad52689a9bfeb-WAW]
+2022-11-17 20:22:00.121 [JDA RateLimit-Worker 3] DEBUG n.d.jda.internal.requests.Requester      : Received response with following cf-rays: [76bad527bc24bfeb-WAW]
+2022-11-17 20:22:00.303 [JDA RateLimit-Worker 3] DEBUG n.d.jda.internal.requests.Requester      : Received response with following cf-rays: [76bad528ef2fbfeb-WAW]
+2022-11-17 20:22:00.303 [JDA RateLimit-Worker 3] DEBUG n.d.jda.internal.requests.RateLimiter    : Backing off 19252 ms for bucket db18a1c09af2e1661654351fbf0faf15:n/a on route POST/applications/{application_id}/commands
+2022-11-17 20:22:05.289 [JDA RateLimit-Worker 5] DEBUG n.d.jda.internal.requests.RateLimiter    : Removed 5 expired buckets
+2022-11-17 20:22:19.786 [JDA RateLimit-Worker 1] DEBUG n.d.jda.internal.requests.Requester      : Received response with following cf-rays: [76bad5a28f46cc93-WAW]
+2022-11-17 20:23:05.300 [JDA RateLimit-Worker 4] DEBUG n.d.jda.internal.requests.RateLimiter    : Removed 1 expired buckets
+2022-11-17 20:25:25.788 [main] INFO  SampleLogger                             : ----------------------------------------------------------------------------
+2022-11-17 20:25:25.789 [main] INFO  SampleLogger                             : Bot started!
+2022-11-17 20:25:26.569 [JDA RateLimit-Worker 1] DEBUG n.d.jda.internal.requests.Requester      : Received response with following cf-rays: [76bada3218c2fc73-WAW]
+2022-11-17 20:25:26.731 [main] INFO  net.dv8tion.jda.api.JDA                  : Login Successful!
+2022-11-17 20:25:26.755 [main] DEBUG n.d.j.a.utils.SessionControllerAdapter   : Creating new worker handle for shard pool 0
+2022-11-17 20:25:26.755 [main] DEBUG n.d.j.a.utils.SessionControllerAdapter   : Running worker
+2022-11-17 20:25:26.756 [ConcurrentSessionController-Worker-0] DEBUG n.d.j.a.utils.SessionControllerAdapter   : Running connect node for shard Shard [0 / 1]
+2022-11-17 20:25:27.012 [JDA MainWS-ReadThread] INFO  n.d.j.internal.requests.WebSocketClient  : Connected to WebSocket
+2022-11-17 20:25:27.013 [JDA MainWS-ReadThread] DEBUG n.d.j.internal.requests.WebSocketClient  : Connected with gateway intents: 1000001010001001
+2022-11-17 20:25:27.013 [JDA MainWS-ReadThread] DEBUG n.d.j.internal.requests.WebSocketClient  : Sending Identify-packet...
+2022-11-17 20:25:27.029 [JDA MainWS-ReadThread] DEBUG n.d.j.internal.requests.WebSocketClient  : Got HELLO packet (OP 10). Initializing keep-alive.
+2022-11-17 20:25:27.256 [JDA MainWS-ReadThread] DEBUG n.d.j.i.handle.GuildSetupController      : Setting incomplete count to 1
+2022-11-17 20:25:27.256 [JDA MainWS-ReadThread] DEBUG n.d.j.i.handle.GuildSetupController      : Starting 75 second timeout for 1 guilds
+2022-11-17 20:25:27.318 [JDA MainWS-ReadThread] DEBUG n.d.jda.internal.entities.EntityBuilder  : Finished setup for guild with a null owner. GuildId: 797464369381769227 OwnerId: 384314598628524043
+2022-11-17 20:25:27.320 [JDA MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA                  : Finished Loading!
+2022-11-17 20:25:27.322 [JDA MainWS-ReadThread] DEBUG n.d.j.i.handle.GuildSetupController      : Finished setup for guild 797464369381769227 firing cached events 0
+2022-11-17 20:25:27.374 [main] INFO  SampleLogger                             : Loading commands...
+2022-11-17 20:25:27.384 [main] INFO  SampleLogger                             : Name: play; Description: Play's music from youtube
+2022-11-17 20:25:27.384 [main] INFO  SampleLogger                             : Name: current; Description: Show's currently playing song
+2022-11-17 20:25:27.384 [main] INFO  SampleLogger                             : Name: stop; Description: Stop's the current song and clear's the queue
+2022-11-17 20:25:27.384 [main] INFO  SampleLogger                             : Name: ping; Description: Calculate ping of the bot
+2022-11-17 20:25:27.385 [main] INFO  SampleLogger                             : Name: inspire; Description: Inspires you
+2022-11-17 20:25:27.385 [main] INFO  SampleLogger                             : Name: loop; Description: Loop's currently playing song
+2022-11-17 20:25:27.385 [main] INFO  SampleLogger                             : Name: leave; Description: Make's bot leave the channel
+2022-11-17 20:25:27.385 [main] INFO  SampleLogger                             : Name: say; Description: Makes bot says things
+2022-11-17 20:25:27.385 [main] INFO  SampleLogger                             : Name: skip; Description: Skip's the current song
+2022-11-17 20:25:27.386 [main] INFO  SampleLogger                             : Name: invite; Description: Generates invitation link for bot
+2022-11-17 20:25:27.386 [main] INFO  SampleLogger                             : Name: shuffle; Description: Shuffles queue
+2022-11-17 20:25:27.386 [main] INFO  SampleLogger                             : Name: queue; Description: Shows queue
+2022-11-17 20:25:27.386 [main] INFO  SampleLogger                             : Loading commands completed!
+2022-11-17 20:25:27.656 [JDA RateLimit-Worker 2] DEBUG n.d.jda.internal.requests.RateLimiter    : Caching bucket hash POST/applications/{application_id}/commands -> db18a1c09af2e1661654351fbf0faf15
+2022-11-17 20:25:27.657 [JDA RateLimit-Worker 2] DEBUG n.d.jda.internal.requests.Requester      : Received response with following cf-rays: [76bada384d26fc73-WAW]
+2022-11-17 20:25:27.868 [JDA RateLimit-Worker 1] DEBUG n.d.jda.internal.requests.Requester      : Received response with following cf-rays: [76bada3a08dffc73-WAW]
+2022-11-17 20:25:28.034 [JDA RateLimit-Worker 1] DEBUG n.d.jda.internal.requests.Requester      : Received response with following cf-rays: [76bada3b4b7ffc73-WAW]
+2022-11-17 20:25:28.891 [JDA RateLimit-Worker 1] DEBUG n.d.jda.internal.requests.Requester      : Received response with following cf-rays: [76bada3c5df3fc73-WAW]
+2022-11-17 20:25:29.093 [JDA RateLimit-Worker 1] DEBUG n.d.jda.internal.requests.Requester      : Received response with following cf-rays: [76bada41ba98fc73-WAW]
+2022-11-17 20:25:29.094 [JDA RateLimit-Worker 1] DEBUG n.d.jda.internal.requests.RateLimiter    : Backing off 18496 ms for bucket db18a1c09af2e1661654351fbf0faf15:n/a on route POST/applications/{application_id}/commands
+2022-11-17 20:25:47.855 [JDA RateLimit-Worker 3] DEBUG n.d.jda.internal.requests.Requester      : Received response with following cf-rays: [76badab6ce78bfe6-WAW]
+2022-11-17 20:25:48.051 [JDA RateLimit-Worker 3] DEBUG n.d.jda.internal.requests.Requester      : Received response with following cf-rays: [76badab83950bfe6-WAW]
+2022-11-17 20:25:48.271 [JDA RateLimit-Worker 3] DEBUG n.d.jda.internal.requests.Requester      : Received response with following cf-rays: [76badab97bbbbfe6-WAW]
+2022-11-17 20:25:48.461 [JDA RateLimit-Worker 3] DEBUG n.d.jda.internal.requests.Requester      : Received response with following cf-rays: [76badabadf1ebfe6-WAW]
+2022-11-17 20:25:48.641 [JDA RateLimit-Worker 3] DEBUG n.d.jda.internal.requests.Requester      : Received response with following cf-rays: [76badabbfa29bfe6-WAW]
+2022-11-17 20:25:48.641 [JDA RateLimit-Worker 3] DEBUG n.d.jda.internal.requests.RateLimiter    : Backing off 19184 ms for bucket db18a1c09af2e1661654351fbf0faf15:n/a on route POST/applications/{application_id}/commands
+2022-11-17 20:25:56.147 [JDA RateLimit-Worker 4] DEBUG n.d.jda.internal.requests.RateLimiter    : Removed 2 expired buckets
+2022-11-17 20:26:08.039 [JDA RateLimit-Worker 2] DEBUG n.d.jda.internal.requests.Requester      : Received response with following cf-rays: [76badb354fdec005-WAW]
+2022-11-17 20:26:08.233 [JDA RateLimit-Worker 2] DEBUG n.d.jda.internal.requests.Requester      : Received response with following cf-rays: [76badb365addc005-WAW]
+2022-11-17 20:26:56.147 [JDA RateLimit-Worker 1] DEBUG n.d.jda.internal.requests.RateLimiter    : Removed 1 expired buckets
+2022-11-17 20:27:58.767 [main] INFO  SampleLogger                             : Bot started!
+2022-11-17 20:27:58.768 [main] INFO  SampleLogger                             : ------------------------------------------------------------------------------------------------------------------------
+2022-11-17 20:27:59.545 [JDA RateLimit-Worker 1] DEBUG n.d.jda.internal.requests.Requester      : Received response with following cf-rays: [76baddedeab9fc7b-WAW]
+2022-11-17 20:27:59.695 [main] INFO  net.dv8tion.jda.api.JDA                  : Login Successful!
+2022-11-17 20:27:59.718 [main] DEBUG n.d.j.a.utils.SessionControllerAdapter   : Creating new worker handle for shard pool 0
+2022-11-17 20:27:59.719 [main] DEBUG n.d.j.a.utils.SessionControllerAdapter   : Running worker
+2022-11-17 20:27:59.719 [ConcurrentSessionController-Worker-0] DEBUG n.d.j.a.utils.SessionControllerAdapter   : Running connect node for shard Shard [0 / 1]
+2022-11-17 20:27:59.968 [JDA MainWS-WriteThread] INFO  n.d.j.internal.requests.WebSocketClient  : Connected to WebSocket
+2022-11-17 20:27:59.968 [JDA MainWS-WriteThread] DEBUG n.d.j.internal.requests.WebSocketClient  : Connected with gateway intents: 1000001010001001
+2022-11-17 20:27:59.968 [JDA MainWS-WriteThread] DEBUG n.d.j.internal.requests.WebSocketClient  : Sending Identify-packet...
+2022-11-17 20:27:59.975 [JDA MainWS-ReadThread] DEBUG n.d.j.internal.requests.WebSocketClient  : Got HELLO packet (OP 10). Initializing keep-alive.
+2022-11-17 20:28:00.246 [JDA MainWS-ReadThread] DEBUG n.d.j.i.handle.GuildSetupController      : Setting incomplete count to 1
+2022-11-17 20:28:00.246 [JDA MainWS-ReadThread] DEBUG n.d.j.i.handle.GuildSetupController      : Starting 75 second timeout for 1 guilds
+2022-11-17 20:28:00.307 [JDA MainWS-ReadThread] DEBUG n.d.jda.internal.entities.EntityBuilder  : Finished setup for guild with a null owner. GuildId: 797464369381769227 OwnerId: 384314598628524043
+2022-11-17 20:28:00.309 [JDA MainWS-ReadThread] INFO  net.dv8tion.jda.api.JDA                  : Finished Loading!
+2022-11-17 20:28:00.310 [JDA MainWS-ReadThread] DEBUG n.d.j.i.handle.GuildSetupController      : Finished setup for guild 797464369381769227 firing cached events 0
+2022-11-17 20:28:00.343 [main] INFO  SampleLogger                             : Loading commands...
+2022-11-17 20:28:00.352 [main] INFO  SampleLogger                             : Name: play; Description: Play's music from youtube
+2022-11-17 20:28:00.352 [main] INFO  SampleLogger                             : Name: current; Description: Show's currently playing song
+2022-11-17 20:28:00.352 [main] INFO  SampleLogger                             : Name: stop; Description: Stop's the current song and clear's the queue
+2022-11-17 20:28:00.352 [main] INFO  SampleLogger                             : Name: ping; Description: Calculate ping of the bot
+2022-11-17 20:28:00.353 [main] INFO  SampleLogger                             : Name: inspire; Description: Inspires you
+2022-11-17 20:28:00.353 [main] INFO  SampleLogger                             : Name: loop; Description: Loop's currently playing song
+2022-11-17 20:28:00.353 [main] INFO  SampleLogger                             : Name: leave; Description: Make's bot leave the channel
+2022-11-17 20:28:00.353 [main] INFO  SampleLogger                             : Name: say; Description: Makes bot says things
+2022-11-17 20:28:00.353 [main] INFO  SampleLogger                             : Name: skip; Description: Skip's the current song
+2022-11-17 20:28:00.353 [main] INFO  SampleLogger                             : Name: invite; Description: Generates invitation link for bot
+2022-11-17 20:28:00.354 [main] INFO  SampleLogger                             : Name: shuffle; Description: Shuffles queue
+2022-11-17 20:28:00.354 [main] INFO  SampleLogger                             : Name: queue; Description: Shows queue
+2022-11-17 20:28:00.354 [main] INFO  SampleLogger                             : Loading commands completed!
+2022-11-17 20:28:00.640 [JDA RateLimit-Worker 2] DEBUG n.d.jda.internal.requests.RateLimiter    : Caching bucket hash POST/applications/{application_id}/commands -> db18a1c09af2e1661654351fbf0faf15
+2022-11-17 20:28:00.641 [JDA RateLimit-Worker 2] DEBUG n.d.jda.internal.requests.Requester      : Received response with following cf-rays: [76baddf4599cfc7b-WAW]
+2022-11-17 20:28:00.819 [JDA RateLimit-Worker 1] DEBUG n.d.jda.internal.requests.Requester      : Received response with following cf-rays: [76baddf62d76fc7b-WAW]
+2022-11-17 20:28:01.054 [JDA RateLimit-Worker 1] DEBUG n.d.jda.internal.requests.Requester      : Received response with following cf-rays: [76baddf73fc1fc7b-WAW]
+2022-11-17 20:28:01.291 [JDA RateLimit-Worker 1] DEBUG n.d.jda.internal.requests.Requester      : Received response with following cf-rays: [76baddf8badbfc7b-WAW]
+2022-11-17 20:28:01.674 [JDA RateLimit-Worker 1] DEBUG n.d.jda.internal.requests.Requester      : Received response with following cf-rays: [76baddfa3e91fc7b-WAW]
+2022-11-17 20:28:01.674 [JDA RateLimit-Worker 1] DEBUG n.d.jda.internal.requests.RateLimiter    : Backing off 18973 ms for bucket db18a1c09af2e1661654351fbf0faf15:n/a on route POST/applications/{application_id}/commands
+2022-11-17 20:28:20.872 [JDA RateLimit-Worker 3] DEBUG n.d.jda.internal.requests.Requester      : Received response with following cf-rays: [76bade736cb1fbc6-WAW]
+2022-11-17 20:28:21.073 [JDA RateLimit-Worker 3] DEBUG n.d.jda.internal.requests.Requester      : Received response with following cf-rays: [76bade749ed5fbc6-WAW]
+2022-11-17 20:28:21.275 [JDA RateLimit-Worker 3] DEBUG n.d.jda.internal.requests.Requester      : Received response with following cf-rays: [76bade75d93cfbc6-WAW]
+2022-11-17 20:28:21.451 [JDA RateLimit-Worker 3] DEBUG n.d.jda.internal.requests.Requester      : Received response with following cf-rays: [76bade771bc0fbc6-WAW]
+2022-11-17 20:28:21.662 [JDA RateLimit-Worker 3] DEBUG n.d.jda.internal.requests.Requester      : Received response with following cf-rays: [76bade783de0fbc6-WAW]
+2022-11-17 20:28:21.663 [JDA RateLimit-Worker 3] DEBUG n.d.jda.internal.requests.RateLimiter    : Backing off 19224 ms for bucket db18a1c09af2e1661654351fbf0faf15:n/a on route POST/applications/{application_id}/commands
+2022-11-17 20:28:29.117 [JDA RateLimit-Worker 4] DEBUG n.d.jda.internal.requests.RateLimiter    : Removed 2 expired buckets
+2022-11-17 20:28:41.092 [JDA RateLimit-Worker 2] DEBUG n.d.jda.internal.requests.Requester      : Received response with following cf-rays: [76badef1cf2dbfc3-WAW]
+2022-11-17 20:28:41.260 [JDA RateLimit-Worker 2] DEBUG n.d.jda.internal.requests.Requester      : Received response with following cf-rays: [76badef2f9cfbfc3-WAW]
+2022-11-17 20:29:29.118 [JDA RateLimit-Worker 1] DEBUG n.d.jda.internal.requests.RateLimiter    : Removed 1 expired buckets

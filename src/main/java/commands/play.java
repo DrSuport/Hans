@@ -41,6 +41,7 @@ public class play extends ACommand{
 
     @Override
     public void Execute(SlashCommandInteractionEvent event) {
+        super.Execute(event);
         OptionMapping messageOption = event.getOption("url");
         String URL = messageOption.getAsString();
 

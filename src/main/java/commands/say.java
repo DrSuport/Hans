@@ -17,6 +17,7 @@ public class say extends ACommand {
 
     @Override
     public void Execute(SlashCommandInteractionEvent event){
+        super.Execute(event);
         OptionMapping messageOption = event.getOption("message");
         String message;
         if(messageOption != null){

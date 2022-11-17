@@ -25,6 +25,7 @@ public class invite extends ACommand{
 
     @Override
     public void Execute(SlashCommandInteractionEvent event) {
+        super.Execute(event);
 
         boolean isEphemeral;
         OptionMapping messageOption = event.getOption("ispublic");

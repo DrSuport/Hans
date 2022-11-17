@@ -22,7 +22,7 @@ public class loop extends ACommand{
 
     @Override
     public void Execute(SlashCommandInteractionEvent event) {//TODO implement loop
-
+        super.Execute(event);
     }
 
 }

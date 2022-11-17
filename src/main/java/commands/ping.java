@@ -15,6 +15,7 @@ public class ping extends ACommand {
 
     @Override
     public void Execute(SlashCommandInteractionEvent event){
+        super.Execute(event);
         long time = System.currentTimeMillis();
         event.reply("Pong!").setEphemeral(true) // reply or acknowledge
                 .flatMap(v ->
