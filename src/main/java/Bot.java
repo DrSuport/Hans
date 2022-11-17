@@ -20,8 +20,7 @@ import java.util.Map;
 public class Bot extends ListenerAdapter
 {
 
-    public static Logger logger;
-
+    private static Logger LOG;
     private static Map<String, ACommand> commands = new HashMap<>();
 
     private static void addCommand(ACommand target){
@@ -29,12 +28,15 @@ public class Bot extends ListenerAdapter
     }
 
     public static void main(String[] args) throws InterruptedException {
+        LOG = LoggerFactory.getLogger("SampleLogger");
 
-        logger = LoggerFactory.getLogger("SampleLogger");
+        LOG.info("----------------------------------------------------------------------------");
+        LOG.info("Bot started!");
+
 
 
         if (args.length < 1) {
-            System.out.println("You have to provide a token as first argument!");
+            LOG.info("You have to provide a token as first argument!");
             System.exit(1);
         }
 
@@ -93,6 +95,7 @@ public class Bot extends ListenerAdapter
 
 
 
+        LOG.info("Loading commands...");
 
         for (Map.Entry<String, ACommand> entry : commands.entrySet()){
             ACommand command = entry.getValue();
@@ -103,9 +106,10 @@ public class Bot extends ListenerAdapter
             if(optionData!=null) jda.upsertCommand(name, description).addOption(optionData.getType(), optionData.getName(), optionData.getDescription(), optionData.isRequired()).queue();
             else jda.upsertCommand(name, description).queue();
 
-            System.out.println("Name: " + name + "; Description: " + description);
+            LOG.info("Name: " + name + "; Description: " + description);
 
         }
+        LOG.info("Loading commands completed!");
     }
 
     @Override
@@ -115,7 +119,6 @@ public class Bot extends ListenerAdapter
 
         for(Member member : voiceChannel.getMembers()){
             RecieveAudio ra = new RecieveAudio();
-
         }
 
     }
@@ -126,7 +129,7 @@ public class Bot extends ListenerAdapter
         try{
             commands.get(event.getName()).Execute(event);
         }catch (Exception e){
-            System.out.println(e.getMessage());
+            System.out.println((e.getMessage()));
         }
     }
 }
