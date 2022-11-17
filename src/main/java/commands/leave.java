@@ -9,7 +9,6 @@ import net.dv8tion.jda.api.managers.AudioManager;
 
 
 public class leave extends ACommand{
-    private static PlayerManager INSTANCE;
     public static String name = "leave";
     public static String description = "Make's bot leave the channel";
     public static String access = null;

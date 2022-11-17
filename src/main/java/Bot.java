@@ -79,6 +79,7 @@ public class Bot extends ListenerAdapter
         addCommand(new shuffle());
         addCommand(new invite());
 
+
         //voiceConntrolTest
         addCommand(new echo());
 

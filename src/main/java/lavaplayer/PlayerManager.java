@@ -70,6 +70,8 @@ public class PlayerManager {
             public void loadFailed(FriendlyException e) {
                 textChannel.sendMessage(e.getMessage()).queue();
             }
+
+
         });
     }
 
