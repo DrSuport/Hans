@@ -40,7 +40,9 @@ public abstract class ACommand{
 
     public void Execute(SlashCommandInteractionEvent event){
         String user = event.getUser().getName();
-        String server = event.getGuild().getName();
+        String server;
+        if (event.getGuild()==null) server = "[Private message]";
+        else server = event.getGuild().getName();
         String command = getName();
         LOG.info("User: " + user + ", used: " + command + ", on server: " + server);
     };
