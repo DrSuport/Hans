@@ -88,6 +88,7 @@ public class Bot extends ListenerAdapter
         addCommand(new leave());
         addCommand(new shuffle());
         addCommand(new invite());
+        addCommand(new undownloadableVideo());
 
 
 
@@ -127,7 +128,7 @@ public class Bot extends ListenerAdapter
         try{
             commands.get(event.getName()).Execute(event);
         }catch (Exception e){
-            System.out.println((e.getMessage()));
+            event.reply("Wrong Command!").setEphemeral(true).queue();
         }
     }
 }
