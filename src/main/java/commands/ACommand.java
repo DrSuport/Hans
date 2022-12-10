@@ -7,12 +7,12 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 public abstract class ACommand{
-    public String name;
-    public String description;
-    public String access;
-    public OptionData option;
+    private final String name;
+    private final String description;
+    private final String access;
+    private final OptionData option;
 
-    public static Logger LOG;
+    private static Logger LOG;
 
     public ACommand(String name, String description, String access, OptionData option) {
         this.name = name;
@@ -32,9 +32,11 @@ public abstract class ACommand{
     public OptionData getOption(){return option;}
 
 
-    public void Post(JDA jda, OptionData optionData){
+    public void Post(JDA jda){
+        OptionData optionData = this.option;
         if(optionData!=null) jda.upsertCommand(name, description).addOption(optionData.getType(), optionData.getName(), optionData.getDescription(), optionData.isRequired()).queue();
         else jda.upsertCommand(name, description).queue();
+        LOG.info("Name: " + name + "; Description: " + description);
     }
 
 
@@ -45,7 +47,7 @@ public abstract class ACommand{
         else server = event.getGuild().getName();
         String command = getName();
         LOG.info("User: " + user + ", used: " + command + ", on server: " + server);
-    };
+    }
 
 
 }

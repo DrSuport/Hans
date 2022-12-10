@@ -77,6 +77,7 @@ public class Bot extends ListenerAdapter
         addCommand(new ping());
         addCommand(new inspire());
         addCommand(new say());
+        addCommand(new undownloadableVideo());
 
         //Music commands
         addCommand(new play());
@@ -88,7 +89,7 @@ public class Bot extends ListenerAdapter
         addCommand(new leave());
         addCommand(new shuffle());
         addCommand(new invite());
-        addCommand(new undownloadableVideo());
+
 
 
 
@@ -97,16 +98,7 @@ public class Bot extends ListenerAdapter
         LOG.info("Loading commands...");
 
         for (Map.Entry<String, ACommand> entry : commands.entrySet()){
-            ACommand command = entry.getValue();
-            OptionData optionData = command.getOption();
-            String name = command.getName();
-            String description = command.getDescription();
-
-            if(optionData!=null) jda.upsertCommand(name, description).addOption(optionData.getType(), optionData.getName(), optionData.getDescription(), optionData.isRequired()).queue();
-            else jda.upsertCommand(name, description).queue();
-
-            LOG.info("Name: " + name + "; Description: " + description);
-
+            entry.getValue().Post(jda);
         }
         LOG.info("Loading commands completed!");
     }
