@@ -19,10 +19,10 @@ import java.net.URISyntaxException;
 import java.util.List;
 
 public class play extends ACommand{
-    public static String name = "play";
-    public static String description = "Play's music from youtube";
-    public static String access = null;
-    public static OptionData option = new OptionData(OptionType.STRING, "url", "URL to youtube video or playlist", true);
+    private final static String name = "play";
+    private final static String description = "Play's music from youtube";
+    private final static String access = null;
+    private final static OptionData option = new OptionData(OptionType.STRING, "url", "URL to youtube video or playlist", true);
 
 
 

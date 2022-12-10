@@ -12,10 +12,10 @@ import net.dv8tion.jda.api.interactions.commands.build.OptionData;
 
 
 public class invite extends ACommand{
-    public static String name = "invite";
-    public static String description = "Generates invitation link for bot";
-    public static String access = null;
-    public static OptionData option = new OptionData(OptionType.BOOLEAN, "ispublic", "Should bot send invite to you or to everyone in chat", false);
+    private final static String name = "invite";
+    private final static String description = "Generates invitation link for bot";
+    private final static String access = null;
+    private final static OptionData option = new OptionData(OptionType.BOOLEAN, "ispublic", "Should bot send invite to you or to everyone in chat", false);
 
 
 

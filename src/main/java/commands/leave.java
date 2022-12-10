@@ -9,10 +9,10 @@ import net.dv8tion.jda.api.managers.AudioManager;
 
 
 public class leave extends ACommand{
-    public static String name = "leave";
-    public static String description = "Make's bot leave the channel";
-    public static String access = null;
-    public static OptionData option = null;
+    private final static String name = "leave";
+    private final static String description = "Make's bot leave the channel";
+    private final static String access = null;
+    private final static OptionData option = null;
 
 
 

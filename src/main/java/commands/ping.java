@@ -4,10 +4,10 @@ import net.dv8tion.jda.api.events.interaction.command.SlashCommandInteractionEve
 import net.dv8tion.jda.api.interactions.commands.build.OptionData;
 
 public class ping extends ACommand {
-    public static String name = "ping";
-    public static String description = "Calculate ping of the bot";
-    public static String access = null;
-    public static OptionData option = null;
+    private final static String name = "ping";
+    private final static String description = "Calculate ping of the bot";
+    private final static String access = null;
+    private final static OptionData option = null;
 
     public ping(){
         super(name, description, access, option);

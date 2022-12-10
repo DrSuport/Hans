@@ -10,10 +10,10 @@ import net.dv8tion.jda.api.interactions.commands.build.OptionData;
 
 
 public class current extends ACommand{
-    public static String name = "current";
-    public static String description = "Show's currently playing song";
-    public static String access = null;
-    public static OptionData option = null;
+    private final static String name = "current";
+    private final static String description = "Show's currently playing song";
+    private final static String access = null;
+    private final static OptionData option = null;
 
 
 

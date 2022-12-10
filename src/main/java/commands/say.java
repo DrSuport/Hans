@@ -6,10 +6,10 @@ import net.dv8tion.jda.api.interactions.commands.OptionType;
 import net.dv8tion.jda.api.interactions.commands.build.OptionData;
 
 public class say extends ACommand {
-    public static String name = "say";
-    public static String description = "Makes bot says things";
-    public static String access = null;
-    public static OptionData option = new OptionData(OptionType.STRING, "message", "What is bot suposed to say", true);
+    private final static String name = "say";
+    private final static String description = "Makes bot says things";
+    private final static String access = null;
+    private final static OptionData option = new OptionData(OptionType.STRING, "message", "What is bot suposed to say", true);
 
     public say(){
         super(name, description, access, option);

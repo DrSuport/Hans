@@ -8,10 +8,10 @@ import net.dv8tion.jda.api.interactions.commands.build.OptionData;
 
 
 public class skip extends ACommand{
-    public static String name = "skip";
-    public static String description = "Skip's the current song";
-    public static String access = null;
-    public static OptionData option = null;
+    private final static String name = "skip";
+    private final static String description = "Skip's the current song";
+    private final static String access = null;
+    private final static OptionData option = null;
 
 
 

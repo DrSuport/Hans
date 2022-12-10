@@ -9,10 +9,10 @@ import net.dv8tion.jda.api.interactions.commands.build.OptionData;
 
 
 public class loop extends ACommand{
-    public static String name = "loop";
-    public static String description = "Loop's currently playing song";
-    public static String access = null;
-    public static OptionData option = null;
+    private final static String name = "loop";
+    private final static String description = "Loop's currently playing song";
+    private final static String access = null;
+    private final static OptionData option = null;
 
 
 

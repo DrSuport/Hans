@@ -7,10 +7,10 @@ import net.dv8tion.jda.api.interactions.commands.build.OptionData;
 
 
 public class stop extends ACommand{
-    public static String name = "stop";
-    public static String description = "Stop's the current song and clear's the queue";
-    public static String access = null;
-    public static OptionData option = null;
+    private final static String name = "stop";
+    private final static String description = "Stop's the current song and clear's the queue";
+    private final static String access = null;
+    private final static OptionData option = null;
 
 
 

@@ -13,10 +13,10 @@ import java.util.Random;
 
 
 public class shuffle extends ACommand{
-    public static String name = "shuffle";
-    public static String description = "Shuffles queue";
-    public static String access = null;
-    public static OptionData option = null;
+    private final static String name = "shuffle";
+    private final static String description = "Shuffles queue";
+    private final static String access = null;
+    private final static OptionData option = null;
 
 
 

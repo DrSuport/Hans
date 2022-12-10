@@ -14,10 +14,10 @@ import java.net.URL;
 import java.net.URLConnection;
 
 public class inspire extends ACommand {
-    public static String name = "inspire";
-    public static String description = "Inspires you";
-    public static String access = "none";
-    public static OptionData option = null;
+    private final static String name = "inspire";
+    private final static String description = "Inspires you";
+    private final static String access = "none";
+    private final static OptionData option = null;
 
     public inspire(){
         super(name, description, access, option);

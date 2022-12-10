@@ -13,10 +13,10 @@ import java.util.ArrayList;
 
 
 public class queue extends ACommand{
-    public static String name = "queue";
-    public static String description = "Shows queue";
-    public static String access = null;
-    public static OptionData option = new OptionData(OptionType.INTEGER, "page", "Which page should i display", false);
+    private final static String name = "queue";
+    private final static String description = "Shows queue";
+    private final static String access = null;
+    private final static OptionData option = new OptionData(OptionType.INTEGER, "page", "Which page should i display", false);
 
 
 
