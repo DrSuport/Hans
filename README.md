@@ -1,3 +1,3 @@
-# Wattsy_J
+# Wattsy
 Java version of Wattsy
 A discord bot
