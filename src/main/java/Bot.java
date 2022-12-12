@@ -1,6 +1,7 @@
 import commands.*;
 import net.dv8tion.jda.api.JDA;
 import net.dv8tion.jda.api.JDABuilder;
+import net.dv8tion.jda.api.OnlineStatus;
 import net.dv8tion.jda.api.entities.Activity;
 import net.dv8tion.jda.api.entities.Member;
 import net.dv8tion.jda.api.entities.channel.concrete.VoiceChannel;
@@ -62,7 +63,8 @@ public class Bot extends ListenerAdapter
         JDA jda = JDABuilder.createDefault(args[0], intents)
                 .setEventPassthrough(true)
                 .addEventListeners(new Bot())
-                .setActivity(Activity.watching("PornHub kids"))
+                .setActivity(Activity.listening("Flammenwerfer"))
+                .setStatus(OnlineStatus.ONLINE)
                 .enableCache(flags)
                 .build();
 
@@ -78,6 +80,7 @@ public class Bot extends ListenerAdapter
         addCommand(new inspire());
         addCommand(new say());
         addCommand(new undownloadableVideo());
+        addCommand(new truth());
 
         //Music commands
         addCommand(new play());
